@@ -153,6 +153,7 @@ Transform:
   m_Children:
   - {fileID: 1344030680}
   - {fileID: 1784729653}
+  - {fileID: 1148440125}
   m_Father: {fileID: 487024986}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -189,7 +190,6 @@ RectTransform:
   m_Children:
   - {fileID: 1205251838}
   - {fileID: 136124473}
-  - {fileID: 1148440125}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -247,9 +247,9 @@ Canvas:
   m_GameObject: {fileID: 487024985}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 435.89
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -920,14 +920,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148440124}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -959.61005, y: -540.6473, z: -0.035160072}
+  m_LocalPosition: {x: 800.79, y: -29.147278, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1825108309}
   - {fileID: 954590520}
   - {fileID: 1055736470}
-  m_Father: {fileID: 487024986}
+  m_Father: {fileID: 136124473}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205251837
@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 1489254564}
   - component: {fileID: 1489254563}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: fish.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1886,6 +1886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd84d55e9228bb646912480218ce2f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  windowToOpen: {fileID: 2639832745810795062, guid: 499a8e5d1e557cf4e8b24bf63931be7c, type: 3}
+  Canvas: {fileID: 487024986}
 --- !u!1 &1825108308
 GameObject:
   m_ObjectHideFlags: 0
