@@ -12,7 +12,7 @@ public class StartMenu : MonoBehaviour, ISelectHandler, IPointerDownHandler, IDe
 
     void Awake()
     {
-        actualStartMenu = GameObject.Find("Start Menu").GetComponent<ActualStartMenu>();
+        
     }
 
     public void OnSelect(BaseEventData eventData)
