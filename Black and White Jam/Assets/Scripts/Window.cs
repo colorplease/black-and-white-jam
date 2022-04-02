@@ -15,13 +15,12 @@ public class Window : MonoBehaviour
     public void Minimize()
     {
         lastRecordedPos = transform.position;
-        minimizeTo = GameObject.Find("ShortcutTrashCanButton" + "(Clone)").GetComponent<RectTransform>();
         isMinimizing = true;
     }
 
     public void Close()
     {
-        Destroy(GameObject.Find("ShortcutTrashCanButton" + "(Clone)"));
+        Destroy(minimizeTo.gameObject);
         Destroy(gameObject);
     }
 
@@ -32,10 +31,6 @@ public class Window : MonoBehaviour
 
     void Update()
     {
-        if (minimizeTo == null)
-        {
-        minimizeTo = GameObject.Find("ShortcutTrashCanButton" + "(Clone)").GetComponent<RectTransform>();
-        }
         if (isMinimizing)
         {
             transform.position = Vector3.MoveTowards(transform.position, minimizeTo.position, moveSpeed);

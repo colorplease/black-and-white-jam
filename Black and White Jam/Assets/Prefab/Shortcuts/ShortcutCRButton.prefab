@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5566275574609031918}
   m_Layer: 5
   m_Name: ShortcutCRButton
-  m_TagString: Untagged
+  m_TagString: Shortcut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
