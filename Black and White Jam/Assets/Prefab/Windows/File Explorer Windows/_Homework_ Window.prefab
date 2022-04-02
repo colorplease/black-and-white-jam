@@ -638,6 +638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 7874555588682732682}
+  shortcutToOpen: {fileID: 0}
   Canvas: {fileID: 0}
 --- !u!1 &2777863826359600306
 GameObject:
@@ -911,6 +912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 7874555588682732682}
+  shortcutToOpen: {fileID: 0}
   Canvas: {fileID: 0}
 --- !u!1 &3073297565927505382
 GameObject:
@@ -1047,6 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 1362504799447045265, guid: ec7ae2f2aa3595b4ba6dfc766565bab9, type: 3}
+  shortcutToOpen: {fileID: 0}
   Canvas: {fileID: 0}
 --- !u!1 &4043796833823464178
 GameObject:
@@ -1183,6 +1186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 7874555588682732682}
+  shortcutToOpen: {fileID: 0}
   Canvas: {fileID: 0}
 --- !u!1 &4100807682952798905
 GameObject:
@@ -1355,6 +1359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 7874555588682732682}
+  shortcutToOpen: {fileID: 0}
   Canvas: {fileID: 0}
 --- !u!1 &4870219999854478345
 GameObject:
@@ -2085,6 +2090,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70afa57fbfe7c5d4b8dfb747fd7d8930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimizeTo: {fileID: 0}
+  lastRecordedPos: {x: 0, y: 0, z: 0}
+  minimizeSpeed: 2.2
+  moveSpeed: 0.1
+  isMinimizing: 0
+  isMaximizing: 0
 --- !u!1 &7938932470917187629
 GameObject:
   m_ObjectHideFlags: 0
