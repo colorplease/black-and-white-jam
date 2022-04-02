@@ -5,7 +5,7 @@ using UnityEngine;
 public class Window : MonoBehaviour
 {
     public RectTransform minimizeTo;
-    Vector3 TargetPos;
+    [SerializeField]Vector3 lastRecordedPos;
     public float minimizeSpeed;
     public float moveSpeed;
     public bool isMinimizing;
@@ -14,6 +14,7 @@ public class Window : MonoBehaviour
 
     public void Minimize()
     {
+        lastRecordedPos = transform.position;
         minimizeTo = GameObject.Find("ShortcutTrashCanButton" + "(Clone)").GetComponent<RectTransform>();
         isMinimizing = true;
     }
@@ -42,9 +43,8 @@ public class Window : MonoBehaviour
         }
         else if (isMaximizing)
         {
-            TargetPos = new Vector3(21,28, 0);
-            transform.position = Vector3.MoveTowards(transform.position, TargetPos, moveSpeed);
-            transform.localScale = Vector3.Lerp(transform.localScale, new Vector3 (1f, 1f, 1), minimizeSpeed * Time.fixedDeltaTime);
+            transform.position = lastRecordedPos;
+            transform.localScale = new Vector3(1, 1 ,1);  
         }
 
         if (transform.position == minimizeTo.position && isMinimizing == true)
