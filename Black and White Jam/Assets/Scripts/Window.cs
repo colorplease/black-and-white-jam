@@ -11,6 +11,10 @@ public class Window : MonoBehaviour
     public bool isMinimizing;
     public bool isMaximizing;
 
+    void Awake()
+    {
+    }
+
 
     public void Minimize()
     {

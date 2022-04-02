@@ -7,7 +7,10 @@ public class Shortcut : MonoBehaviour
     public Window window;
     public void MaximizeCall()
     {
-        window.gameObject.SetActive(true);
-        window.Maximize();
+        if (window.gameObject.activeSelf == false)
+        {
+            window.gameObject.SetActive(true);
+            window.Maximize();
+        }
     }
 }
