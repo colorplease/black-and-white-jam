@@ -44,7 +44,7 @@ public class Resume : MonoBehaviour
             {
                 StartCoroutine(AccessDenied());
                 taskManager.Mistake();
-                fishManager.SendMessageToChat("> Incorrect Input [-5s]");
+                fishManager.SendMessageToChat("> Incorrect Input [-60m]");
             }
         }
     }

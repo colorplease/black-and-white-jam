@@ -580,7 +580,7 @@ PrefabInstance:
       objectReference: {fileID: 2113143665}
     - target: {fileID: 8857332717664159660, guid: dfcd57c14c4149b45a39e018438ec76e, type: 3}
       propertyPath: m_Name
-      value: ShortcutNotePadButton
+      value: ShortcutNotePadButton(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 8857332717664159660, guid: dfcd57c14c4149b45a39e018438ec76e, type: 3}
       propertyPath: m_IsActive
@@ -3022,6 +3022,18 @@ PrefabInstance:
       value: 912.5
       objectReference: {fileID: 0}
     - target: {fileID: 3189367289175038936, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009259259
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189367289175038936, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.009259259
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189367289175038936, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.009259259
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189367289175038936, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3069,9 +3081,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3189367289175038936, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3189367289175038937, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
       propertyPath: m_Name
-      value: NotePad Window
+      value: NotePad Window(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 3189367289175038943, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
       propertyPath: minimizeTo
@@ -3439,13 +3455,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shortcuts: []
+  ToDo: {fileID: 3189367289175038937, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
   crossOuts: []
   currentShortcutInt: 0
   shakeaShakea: {fileID: 0}
   shakeDuration: 0
   shakeAmount: 10
   decreaseFactor: 1
-  isMistake: 0
+  isMistake: 1
   numberOfTasksCompleted: 0
   currentTime: 540
   timeSpeed: 0.5
@@ -4560,7 +4577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd84d55e9228bb646912480218ce2f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowToOpen: {fileID: 2639832745810795062, guid: 499a8e5d1e557cf4e8b24bf63931be7c, type: 3}
+  windowToOpen: {fileID: 6902830542383119550, guid: 305577a96ef26d94094c047e84821333, type: 3}
   shortcutToOpen: {fileID: 7761929001154922566, guid: 789d6a8615189c142909ba155d617005, type: 3}
   Canvas: {fileID: 487024986}
   shakeaShakea: {fileID: 0}

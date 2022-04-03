@@ -18,6 +18,7 @@ public class TaskManager : MonoBehaviour
    public RectTransform[] shortcuts;
    GameObject[] shortcutsGameObjects;
    GameObject[] crossOutsGameObjects;
+   public GameObject ToDo;
    public Image[] crossOuts;
    [SerializeField]int currentShortcutInt;
    float xShortCutPos;
@@ -121,8 +122,6 @@ public class TaskManager : MonoBehaviour
            int minutes = Mathf.FloorToInt(currentTime / 60.0f);
            int seconds = Mathf.FloorToInt(currentTime - minutes * 60);
            currentTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-           print(minutes);
-           print(seconds);
            if (currentTime > 779)
            {
                currentTime = 0f;
@@ -168,9 +167,24 @@ public class TaskManager : MonoBehaviour
 
     public void TaskComplete(int taskNumber)
     {
-        var tempColor = crossOuts[taskNumber].color;
-        tempColor.a = 1f;
-        crossOuts[taskNumber].color = tempColor;
+        if (crossOuts[0]== null)
+        {
+        GameObject window = Instantiate(ToDo, new Vector3(UnityEngine.Random.Range(-100, 100) / shakeaShakea.localScale.x, UnityEngine.Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
+        window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
+        window.transform.SetParent(shakeaShakea);
+        crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
+       crossOuts = new Image[crossOutsGameObjects.Length];
+       for (int i = 0; i < crossOutsGameObjects.Length; i++)
+       {
+           crossOuts[i] = crossOutsGameObjects[i].GetComponent<Image>();
+           var tempColor = crossOuts[i].color;
+           tempColor.a = 0f;
+           crossOuts[i].color = tempColor;
+       }
+        }
+        var tempColor2 = crossOuts[taskNumber].color;
+        tempColor2.a = 1f;
+        crossOuts[taskNumber].color = tempColor2;
         numberOfTasksCompleted++;
     }
    }
