@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System;
 
 public class TaskManager : MonoBehaviour
 {
@@ -26,6 +28,12 @@ public class TaskManager : MonoBehaviour
    public float decreaseFactor;
    public bool isMistake;
    public int numberOfTasksCompleted;
+   public float currentTime;
+   public float timeSpeed;
+   public TextMeshProUGUI currentTimeText;
+   public bool clockActive;
+   bool secondTimeAround;
+
 
    Vector3 originalPos;
 
@@ -101,7 +109,35 @@ public class TaskManager : MonoBehaviour
    void Update()
    {
         UpdateShortcut();   
-        MistakeHappening();    
+        MistakeHappening();  
+        Clock();  
+   }
+
+   void Clock()
+   {
+       if (clockActive == true)
+       {
+           currentTime += Time.fixedDeltaTime * timeSpeed;
+           int minutes = Mathf.FloorToInt(currentTime / 60.0f);
+           int seconds = Mathf.FloorToInt(currentTime - minutes * 60);
+           currentTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+           print(minutes);
+           print(seconds);
+           if (currentTime > 779)
+           {
+               currentTime = 0f;
+               secondTimeAround = true;
+           }
+           else if (currentTime > 300 && secondTimeAround == true)
+           {
+               clockActive = false;
+               secondTimeAround = false;
+           }
+       }
+       else
+       {
+           Debug.Log("lose");
+       }
    }
 
     void MistakeHappening()
@@ -110,7 +146,7 @@ public class TaskManager : MonoBehaviour
        {
            if (shakeDuration > 0)
            {
-               shakeaShakea.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+               shakeaShakea.localPosition = originalPos + UnityEngine.Random.insideUnitSphere * shakeAmount;
 
                shakeDuration -= Time.deltaTime * decreaseFactor;
            }

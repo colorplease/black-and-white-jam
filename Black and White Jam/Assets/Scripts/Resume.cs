@@ -11,6 +11,7 @@ public class Resume : MonoBehaviour
     [SerializeField] GameObject fish;
     [SerializeField] GameObject fish1;
     [SerializeField] TaskManager taskManager;
+    [SerializeField] FISHManager fishManager;
     public GameObject windowToOpen;
     public RectTransform Canvas;
     public Transform shakeaShakea;
@@ -22,6 +23,7 @@ public class Resume : MonoBehaviour
         inputField.characterLimit = 4;
         Canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
         shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
+        fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
     }
 
     void Update()
@@ -36,11 +38,13 @@ public class Resume : MonoBehaviour
             else if (passwordTry.Equals("fish"))
             {
                 StartCoroutine(fish2());
+                fishManager.SendMessageToChat("> fish?");
             }
             else
             {
                 StartCoroutine(AccessDenied());
                 taskManager.Mistake();
+                fishManager.SendMessageToChat("> Incorrect Input [-5s]");
             }
         }
     }
@@ -56,6 +60,7 @@ public class Resume : MonoBehaviour
         window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
         window.transform.SetParent(shakeaShakea); 
         taskManager.TaskComplete(1);
+        fishManager.SendMessageToChat("> Task Completed! [Find Resume]");
         Destroy(gameObject);
     }
 
