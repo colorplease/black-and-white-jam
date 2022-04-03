@@ -271,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 1055846307405556931, guid: 49cabdf22f0027e499535c62b6cfbc42, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &2008585905932252602
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -978,6 +979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 1278038541529180707, guid: fbe918590a0c2874f8798f8e414ea55d, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &7700464398218084889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,6 +1071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragRectTransform: {fileID: 5656268756191200136}
   canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &8990357629742700298
 GameObject:
   m_ObjectHideFlags: 0

@@ -271,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 3599206147610851168, guid: 4bdd8e34d4453494f86a70236b42efab, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &117036293
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 1531150249695676129, guid: 1842c1ecf37f4804da37d408ad945bd4, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &200008205
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,6 +916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 7143226275696498415, guid: 43d3a1bbafb5f99478829bf17e8d52da, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &864811809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 5911152642465540887, guid: 8e00a0c93770fb94c8dbbe8fee98305d, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &904847966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 467958325538685198, guid: cbed5bdaa2c2f2648b7a9c06a7197761, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &1126859656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +1998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowToOpen: {fileID: 7874555588682732682, guid: 2db96801213bb2a4ead9f7fcb570bd4a, type: 3}
   Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &4280058078222573274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,6 +2262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragRectTransform: {fileID: 7981828174300784872}
   canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &6664789486289075306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

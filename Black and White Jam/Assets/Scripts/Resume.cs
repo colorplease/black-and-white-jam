@@ -21,6 +21,10 @@ public class Resume : MonoBehaviour
             {
                 print("yes");
             }
+            else
+            {
+                print("no");
+            }
         }
     }
 }

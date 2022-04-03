@@ -20,10 +20,12 @@ public class Folder : MonoBehaviour, IPointerClickHandler
     float xShortCutPos;
     public GameObject windowToOpen;
     public RectTransform Canvas;
+    public Transform shakeaShakea;
 
     void Awake()
     {
         Canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
+        shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
     }
 
      public void OnPointerClick(PointerEventData eventData)
@@ -38,8 +40,9 @@ public class Folder : MonoBehaviour, IPointerClickHandler
             }
             else
             {
-                GameObject window = Instantiate(windowToOpen, new Vector3(Random.Range(-100, 100), Random.Range(-87, 155), 0), transform.rotation);
-            window.transform.SetParent(Canvas, false);          
+                GameObject window = Instantiate(windowToOpen, new Vector3(Random.Range(-100, 100) / shakeaShakea.localScale.x, Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
+                window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
+                window.transform.SetParent(shakeaShakea);        
                 }
             
         }
