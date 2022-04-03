@@ -17,10 +17,12 @@ public class TaskManager : MonoBehaviour
    [SerializeField]int currentShortcutInt;
    float xShortCutPos;
    int numberOfShortcuts;
+   public Transform shakeaShakea;
 
    void UpdateShortcut()
    {
        shortcutsGameObjects = GameObject.FindGameObjectsWithTag("Shortcut");
+       shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
        shortcuts = new RectTransform[shortcutsGameObjects.Length];
        for(int i = 0; i < shortcutsGameObjects.Length; i++)
        {
@@ -68,12 +70,18 @@ public class TaskManager : MonoBehaviour
                     break;
                 }
            }
-           shortcuts[i].localPosition = new Vector3(xShortCutPos, -501.8f, 0);
+           shortcuts[i].position = new Vector3(xShortCutPos / shakeaShakea.localScale.x, -501.8f / shakeaShakea.localScale.x, 836.0923f);
        }
    }
 
    void Update()
    {
-        UpdateShortcut();       
+        UpdateShortcut();   
+        Mistake();    
    }
-}
+
+    void Mistake()
+   {
+	}
+   }
+

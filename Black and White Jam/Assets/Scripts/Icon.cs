@@ -21,11 +21,13 @@ public class Icon : MonoBehaviour, IPointerClickHandler
     public GameObject windowToOpen;
     public GameObject shortcutToOpen;
     public RectTransform Canvas;
+    public Transform shakeaShakea;
 
     void Awake()
     {
         Canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
-    }
+        shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
+    }   
 
      public void OnPointerClick(PointerEventData eventData)
     {
@@ -83,10 +85,12 @@ public class Icon : MonoBehaviour, IPointerClickHandler
                     break;
                 }
             }
-                GameObject window = Instantiate(windowToOpen, new Vector3(Random.Range(-100, 100), Random.Range(-87, 155), 0), transform.rotation);
-            window.transform.SetParent(Canvas, false);
-                GameObject shortcut = Instantiate(shortcutToOpen, new Vector3(xShortCutPos, -501.8f, 0), transform.rotation);
-            shortcut.transform.SetParent(Canvas, false);
+                GameObject window = Instantiate(windowToOpen, new Vector3(Random.Range(-100, 100) / shakeaShakea.localScale.x, Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
+                window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
+                window.transform.SetParent(shakeaShakea);
+                GameObject shortcut = Instantiate(shortcutToOpen, new Vector3(xShortCutPos / shakeaShakea.localScale.x, -501.8f / shakeaShakea.localScale.x, 0), transform.rotation);
+                shortcut.transform.localScale = new Vector3(shortcut.transform.localScale.x / shakeaShakea.localScale.x, shortcut.transform.localScale.y / shakeaShakea.localScale.y,shortcut.transform.localScale.y / shakeaShakea.localScale.y );
+                shortcut.transform.SetParent(shakeaShakea);
                 shortcut.GetComponent<Shortcut>().window = window.GetComponent<Window>();
                 window.GetComponent<Window>().minimizeTo = shortcut.GetComponent<RectTransform>();            
                 }
