@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4279603028283306939}
   m_Layer: 5
   m_Name: FishMail Window
-  m_TagString: Untagged
+  m_TagString: Window
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

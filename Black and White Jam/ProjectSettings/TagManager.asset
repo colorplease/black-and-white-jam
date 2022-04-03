@@ -8,6 +8,7 @@ TagManager:
   - CrossOut
   - ShakeaShakea
   - TaskManager
+  - Window
   layers:
   - Default
   - TransparentFX

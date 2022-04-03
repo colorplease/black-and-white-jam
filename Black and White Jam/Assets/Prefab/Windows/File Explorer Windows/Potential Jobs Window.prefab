@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 1716001566332011170}
   m_Layer: 5
   m_Name: Potential Jobs Window
-  m_TagString: Untagged
+  m_TagString: Window
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

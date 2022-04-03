@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TaskManager : MonoBehaviour
 {
@@ -13,7 +14,9 @@ public class TaskManager : MonoBehaviour
 // 7: -364.3
 // 8: -296.7
    public RectTransform[] shortcuts;
-   public GameObject[] shortcutsGameObjects;
+   GameObject[] shortcutsGameObjects;
+   GameObject[] crossOutsGameObjects;
+   public Image[] crossOuts;
    [SerializeField]int currentShortcutInt;
    float xShortCutPos;
    int numberOfShortcuts;
@@ -22,13 +25,28 @@ public class TaskManager : MonoBehaviour
    public float shakeAmount;
    public float decreaseFactor;
    public bool isMistake;
+   public int numberOfTasksCompleted;
 
    Vector3 originalPos;
+
+   void Awake()
+   {
+       shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
+       crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
+       crossOuts = new Image[crossOutsGameObjects.Length];
+       for (int i = 0; i < crossOutsGameObjects.Length; i++)
+       {
+           crossOuts[i] = crossOutsGameObjects[i].GetComponent<Image>();
+           var tempColor = crossOuts[i].color;
+           tempColor.a = 0f;
+           crossOuts[i].color = tempColor;
+       }
+       
+   }
 
    void UpdateShortcut()
    {
        shortcutsGameObjects = GameObject.FindGameObjectsWithTag("Shortcut");
-       shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
        shortcuts = new RectTransform[shortcutsGameObjects.Length];
        for(int i = 0; i < shortcutsGameObjects.Length; i++)
        {
@@ -100,6 +118,7 @@ public class TaskManager : MonoBehaviour
            {
                shakeDuration = 0f;
                shakeaShakea.localPosition = originalPos;
+               isMistake = false;
            }
        }
    }
@@ -110,5 +129,13 @@ public class TaskManager : MonoBehaviour
        shakeDuration = 0.25f;
        isMistake = true;
    }
+
+    public void TaskComplete(int taskNumber)
+    {
+        var tempColor = crossOuts[taskNumber].color;
+        tempColor.a = 1f;
+        crossOuts[taskNumber].color = tempColor;
+        numberOfTasksCompleted++;
+    }
    }
 

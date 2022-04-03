@@ -16,7 +16,6 @@ using UnityEngine.EventSystems;
 public class Folder : MonoBehaviour, IPointerClickHandler
 {
     int tap;
-    int numberOfShortcuts;
     float xShortCutPos;
     public GameObject windowToOpen;
     public RectTransform Canvas;

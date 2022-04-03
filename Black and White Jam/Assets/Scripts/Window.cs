@@ -6,19 +6,24 @@ public class Window : MonoBehaviour
 {
     public RectTransform minimizeTo;
     [SerializeField]Vector3 lastRecordedPos;
+    [SerializeField]Vector3 lastRecordedSize;
     public float minimizeSpeed;
     public float moveSpeed;
     public bool isMinimizing;
     public bool isMaximizing;
+    public Transform shakeaShakea;
+    
 
     void Awake()
     {
+        shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
     }
 
 
     public void Minimize()
     {
-        lastRecordedPos = transform.position;
+        lastRecordedPos = transform.localPosition;
+        lastRecordedSize = new Vector3(transform.localScale.x, transform.localScale.y, 1f);
         isMinimizing = true;
     }
 
@@ -37,13 +42,13 @@ public class Window : MonoBehaviour
     {
         if (isMinimizing)
         {
-            transform.position = Vector3.MoveTowards(transform.position, minimizeTo.position, moveSpeed);
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, minimizeTo.localPosition, moveSpeed);
             transform.localScale = Vector3.Lerp(transform.localScale, new Vector3 (0f, 0f, 1), minimizeSpeed * Time.fixedDeltaTime);
         }
         else if (isMaximizing)
         {
-            transform.position = lastRecordedPos;
-            transform.localScale = new Vector3(1, 1 ,1);  
+            transform.localPosition = lastRecordedPos;
+            transform.localScale = lastRecordedSize;
         }
 
         if (transform.position == minimizeTo.position && isMinimizing == true)
@@ -52,7 +57,7 @@ public class Window : MonoBehaviour
             gameObject.SetActive(false);
         }
 
-        if (transform.localScale == new Vector3(1f, 1f, 1))
+        if (transform.localScale == lastRecordedSize)
         {
             isMaximizing = false;
         }

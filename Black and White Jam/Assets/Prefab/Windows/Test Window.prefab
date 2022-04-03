@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 2639832745810795056}
   m_Layer: 5
   m_Name: Test Window
-  m_TagString: Untagged
+  m_TagString: Window
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,10 +459,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimizeTo: {fileID: 0}
   lastRecordedPos: {x: 0, y: 0, z: 0}
-  minimizeSpeed: 2.2
-  moveSpeed: 0.1
+  lastRecordedSize: {x: 0, y: 0, z: 0}
+  minimizeSpeed: 4
+  moveSpeed: 10
   isMinimizing: 0
   isMaximizing: 0
+  shakeaShakea: {fileID: 0}
 --- !u!1 &2639832746128522122
 GameObject:
   m_ObjectHideFlags: 0

@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 3189367289175038943}
   m_Layer: 5
   m_Name: NotePad Window
-  m_TagString: Untagged
+  m_TagString: Window
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -808,10 +808,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimizeTo: {fileID: 0}
   lastRecordedPos: {x: 0, y: 0, z: 0}
-  minimizeSpeed: 2.2
-  moveSpeed: 0.1
+  lastRecordedSize: {x: 0, y: 0, z: 0}
+  minimizeSpeed: 4
+  moveSpeed: 10
   isMinimizing: 0
   isMaximizing: 0
+  shakeaShakea: {fileID: 0}
 --- !u!1 &3189367289998178917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,7 +2198,7 @@ GameObject:
   - component: {fileID: 8767831410443380670}
   m_Layer: 5
   m_Name: Finish (6)
-  m_TagString: CrossOut
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
