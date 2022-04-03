@@ -18,6 +18,12 @@ public class TaskManager : MonoBehaviour
    float xShortCutPos;
    int numberOfShortcuts;
    public Transform shakeaShakea;
+   public float shakeDuration;
+   public float shakeAmount;
+   public float decreaseFactor;
+   public bool isMistake;
+
+   Vector3 originalPos;
 
    void UpdateShortcut()
    {
@@ -77,11 +83,32 @@ public class TaskManager : MonoBehaviour
    void Update()
    {
         UpdateShortcut();   
-        Mistake();    
+        MistakeHappening();    
    }
 
-    void Mistake()
+    void MistakeHappening()
    {
-	}
+       if (isMistake)
+       {
+           if (shakeDuration > 0)
+           {
+               shakeaShakea.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+
+               shakeDuration -= Time.deltaTime * decreaseFactor;
+           }
+           else
+           {
+               shakeDuration = 0f;
+               shakeaShakea.localPosition = originalPos;
+           }
+       }
+   }
+
+   public void Mistake()
+   {
+       originalPos = shakeaShakea.localPosition;
+       shakeDuration = 0.25f;
+       isMistake = true;
+   }
    }
 

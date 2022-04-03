@@ -10,9 +10,11 @@ public class Resume : MonoBehaviour
     [SerializeField] GameObject denied;
     [SerializeField] GameObject fish;
     [SerializeField] GameObject fish1;
+    [SerializeField] TaskManager taskManager;
 
     void Awake()
     {
+        taskManager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<TaskManager>();
         inputField.characterLimit = 4;
     }
 
@@ -32,6 +34,7 @@ public class Resume : MonoBehaviour
             else
             {
                 StartCoroutine(AccessDenied());
+                taskManager.Mistake();
             }
         }
     }

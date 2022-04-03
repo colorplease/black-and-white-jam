@@ -3594,11 +3594,11 @@ GameObject:
   - component: {fileID: 1619334343}
   m_Layer: 0
   m_Name: Task Manager
-  m_TagString: Untagged
+  m_TagString: TaskManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1619334343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3615,6 +3615,10 @@ MonoBehaviour:
   shortcutsGameObjects: []
   currentShortcutInt: 0
   shakeaShakea: {fileID: 0}
+  shakeDuration: 0
+  shakeAmount: 10
+  decreaseFactor: 1
+  isMistake: 0
 --- !u!4 &1619334344
 Transform:
   m_ObjectHideFlags: 0
@@ -6341,3 +6345,4 @@ MonoBehaviour:
   denied: {fileID: 994112879}
   fish: {fileID: 1989027344}
   fish1: {fileID: 1945565449}
+  taskManager: {fileID: 0}
