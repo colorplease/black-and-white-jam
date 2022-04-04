@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class Captcha : MonoBehaviour
 {
@@ -10,7 +12,11 @@ public class Captcha : MonoBehaviour
     [SerializeField] TaskManager taskManager;
     [SerializeField] FISHManager fishManager;
     [SerializeField] int currentSet;
-    [SerializeField] int fishPoints;
+    [SerializeField]GameObject clickFish;
+    [SerializeField] TextMeshProUGUI confirmText;
+    [SerializeField]GameObject confirmButton;
+    public int fishPoints;
+    public bool fishClickReset;
 
     void Awake()
     {
@@ -28,15 +34,45 @@ public class Captcha : MonoBehaviour
         StartCoroutine(not());
     }
 
-    public void yesfish()
-    {
-        fishPoints++;
-    }
+    public void Confirm()
+   {
+       confirmText.color = Color.black;
+       if (fishPoints == 5)
+       {
+           StartCoroutine(yesfish());
+       }
+       else
+       {
+           StartCoroutine(notfish());
+       }
+   }
 
-    public void notfish()
-    {
-        fishPoints--;
-    }
+   IEnumerator yesfish()
+   {
+       clickFish.SetActive(false);
+       YESFISH.SetActive(true);
+       yield return new WaitForSeconds(1.5f);
+       YESFISH.SetActive(false);
+
+   }
+
+   IEnumerator notfish()
+   {
+       fishPoints = 0;
+       confirmButton.GetComponent<Image>().color = Color.white;
+       fishClickReset = true;
+       clickFish.SetActive(false);
+       NOTFISH.SetActive(true);
+       taskManager.Mistake();
+       fishManager.SendMessageToChat("> not fish [-60m]");
+       yield return new WaitForSeconds(1.5f);
+       confirmText.color = Color.white;
+       confirmButton.GetComponent<Image>().color = Color.black;
+       clickFish.SetActive(true);
+       NOTFISH.SetActive(false);
+       yield return new WaitForSeconds(0.01f);
+       fishClickReset = false;
+   }
 
     IEnumerator yes()
     {
@@ -51,7 +87,7 @@ public class Captcha : MonoBehaviour
         }
         else
         {
-            Debug.Log("ooga");
+            clickFish.SetActive(true);
         }
     }
 
