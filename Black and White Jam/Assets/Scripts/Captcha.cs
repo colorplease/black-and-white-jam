@@ -9,6 +9,7 @@ public class Captcha : MonoBehaviour
     [SerializeField]GameObject YESFISH;
     [SerializeField]GameObject NOTFISH;
     [SerializeField]GameObject[] set;
+    [SerializeField]GameObject fishQuestions;
     [SerializeField] TaskManager taskManager;
     [SerializeField] FISHManager fishManager;
     [SerializeField] int currentSet;
@@ -87,6 +88,7 @@ public class Captcha : MonoBehaviour
         }
         else
         {
+            fishQuestions.SetActive(false);
             clickFish.SetActive(true);
         }
     }
