@@ -16,6 +16,7 @@ public class Captcha : MonoBehaviour
     [SerializeField]GameObject clickFish;
     [SerializeField] TextMeshProUGUI confirmText;
     [SerializeField]GameObject confirmButton;
+    [SerializeField]GameObject captchaType;
     public int fishPoints;
     public bool fishClickReset;
 
@@ -54,6 +55,7 @@ public class Captcha : MonoBehaviour
        YESFISH.SetActive(true);
        yield return new WaitForSeconds(1.5f);
        YESFISH.SetActive(false);
+       captchaType.SetActive(true);
 
    }
 
@@ -73,6 +75,33 @@ public class Captcha : MonoBehaviour
        NOTFISH.SetActive(false);
        yield return new WaitForSeconds(0.01f);
        fishClickReset = false;
+   }
+
+   public void wrongFish()
+   {
+       StartCoroutine(wrongfish());
+   }
+
+   public void rightFish()
+   {
+       StartCoroutine(rightfish());
+   }
+
+   IEnumerator wrongfish()
+   {
+       captchaType.SetActive(false);
+       NOTFISH.SetActive(true);
+       yield return new WaitForSeconds(1.5f);
+       captchaType.SetActive(true);
+       NOTFISH.SetActive(false);
+   }
+
+   IEnumerator rightfish()
+   {
+       captchaType.SetActive(false);
+       YESFISH.SetActive(true);
+       yield return new WaitForSeconds(1.5f);
+       YESFISH.SetActive(false);
    }
 
     IEnumerator yes()

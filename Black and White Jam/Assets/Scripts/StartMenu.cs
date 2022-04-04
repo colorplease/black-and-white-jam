@@ -12,7 +12,6 @@ public class StartMenu : MonoBehaviour, ISelectHandler, IPointerDownHandler, IDe
 
     void Awake()
     {
-        
     }
 
     public void OnSelect(BaseEventData eventData)
