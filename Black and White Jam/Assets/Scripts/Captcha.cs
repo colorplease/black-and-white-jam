@@ -17,6 +17,7 @@ public class Captcha : MonoBehaviour
     [SerializeField] TextMeshProUGUI confirmText;
     [SerializeField]GameObject confirmButton;
     [SerializeField]GameObject captchaType;
+    [SerializeField]GameObject end;
     public int fishPoints;
     public bool fishClickReset;
 
@@ -102,6 +103,7 @@ public class Captcha : MonoBehaviour
        YESFISH.SetActive(true);
        yield return new WaitForSeconds(1.5f);
        YESFISH.SetActive(false);
+       end.SetActive(true);
    }
 
     IEnumerator yes()

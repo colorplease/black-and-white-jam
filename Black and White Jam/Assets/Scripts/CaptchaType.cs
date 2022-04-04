@@ -23,6 +23,8 @@ public class CaptchaType : MonoBehaviour
             string passwordTry = inputField.text;
             if (passwordTry.Equals("i love fish"))
             {
+                taskManager.TaskComplete(4);
+                fishManager.SendMessageToChat("> Task Completed! [Fish Verification]");
                 captcha.rightFish();
             }
             else if (passwordTry.Equals("fish"))
