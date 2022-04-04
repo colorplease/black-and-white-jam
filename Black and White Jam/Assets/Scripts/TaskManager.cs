@@ -19,6 +19,7 @@ public class TaskManager : MonoBehaviour
    GameObject[] shortcutsGameObjects;
    GameObject[] crossOutsGameObjects;
    public GameObject ToDo;
+   public GameObject ToDoShortcut;
    public Image[] crossOuts;
    [SerializeField]int currentShortcutInt;
    float xShortCutPos;
@@ -167,25 +168,11 @@ public class TaskManager : MonoBehaviour
 
     public void TaskComplete(int taskNumber)
     {
-        if (crossOuts[0]== null)
-        {
-        GameObject window = Instantiate(ToDo, new Vector3(UnityEngine.Random.Range(-100, 100) / shakeaShakea.localScale.x, UnityEngine.Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
-        window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
-        window.transform.SetParent(shakeaShakea);
-        crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
-       crossOuts = new Image[crossOutsGameObjects.Length];
-       for (int i = 0; i < crossOutsGameObjects.Length; i++)
-       {
-           crossOuts[i] = crossOutsGameObjects[i].GetComponent<Image>();
-           var tempColor = crossOuts[i].color;
-           tempColor.a = 0f;
-           crossOuts[i].color = tempColor;
-       }
-        }
         var tempColor2 = crossOuts[taskNumber].color;
         tempColor2.a = 1f;
         crossOuts[taskNumber].color = tempColor2;
         numberOfTasksCompleted++;
+        
     }
    }
 

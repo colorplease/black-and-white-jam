@@ -10,6 +10,7 @@ public class Captcha : MonoBehaviour
     [SerializeField] TaskManager taskManager;
     [SerializeField] FISHManager fishManager;
     [SerializeField] int currentSet;
+    [SerializeField] int fishPoints;
 
     void Awake()
     {
@@ -25,6 +26,16 @@ public class Captcha : MonoBehaviour
     public void NOT()
     {
         StartCoroutine(not());
+    }
+
+    public void yesfish()
+    {
+        fishPoints++;
+    }
+
+    public void notfish()
+    {
+        fishPoints--;
     }
 
     IEnumerator yes()

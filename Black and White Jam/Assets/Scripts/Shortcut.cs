@@ -12,5 +12,7 @@ public class Shortcut : MonoBehaviour
             window.gameObject.SetActive(true);
             window.Maximize();
         }
+
+        window.gameObject.transform.SetAsLastSibling();
     }
 }

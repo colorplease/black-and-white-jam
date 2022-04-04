@@ -25,6 +25,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
        newMessage.textObject = newText.GetComponent<TextMeshProUGUI>(); 
        newMessage.textObject.text = newMessage.text;
        messageList.Add(newMessage);
+       dragRectTransform.SetAsLastSibling();
    }
 
    public void OnPointerDown(PointerEventData eventData)
