@@ -62,12 +62,13 @@ public class Captcha : MonoBehaviour
 
    IEnumerator notfish()
    {
+       
        fishPoints = 0;
        confirmButton.GetComponent<Image>().color = Color.white;
        fishClickReset = true;
        clickFish.SetActive(false);
        NOTFISH.SetActive(true);
-       taskManager.Mistake();
+       taskManager.Mistake(60);
        fishManager.SendMessageToChat("> not fish [-60m]");
        yield return new WaitForSeconds(1.5f);
        confirmText.color = Color.white;
@@ -128,7 +129,7 @@ public class Captcha : MonoBehaviour
     {
         set[currentSet].SetActive(false);
         NOTFISH.SetActive(true);
-        taskManager.Mistake();
+        taskManager.Mistake(60);
         fishManager.SendMessageToChat("> not fish [-60m]");
         yield return new WaitForSeconds(1.5f);
         currentSet = 0;

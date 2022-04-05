@@ -1771,6 +1771,7 @@ MonoBehaviour:
   fish: {fileID: 1755857978605364867}
   fish1: {fileID: 1755857978687633818}
   taskManager: {fileID: 0}
+  fishManager: {fileID: 0}
   windowToOpen: {fileID: 8964183997353804264, guid: 76407de6606d5f94b83c321aede8b5a6, type: 3}
   Canvas: {fileID: 0}
   shakeaShakea: {fileID: 0}

@@ -12,6 +12,7 @@ TagManager:
   - FISH
   - yes
   - no
+  - virus
   layers:
   - Default
   - TransparentFX

@@ -12,11 +12,22 @@ public class Window : MonoBehaviour
     public bool isMinimizing;
     public bool isMaximizing;
     public Transform shakeaShakea;
+    public FISHManager fishManager;
+    public string instructions;
+
     
 
     void Awake()
     {
         shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
+        fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
+        StartCoroutine(instruct());
+    }
+
+    IEnumerator instruct()
+    {
+        yield return new WaitForSeconds(0.5f);
+        fishManager.SendMessageToChat(instructions);
     }
 
 

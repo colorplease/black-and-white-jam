@@ -159,11 +159,12 @@ public class TaskManager : MonoBehaviour
        }
    }
 
-   public void Mistake()
+   public void Mistake(float timeLost)
    {
        originalPos = shakeaShakea.localPosition;
        shakeDuration = 0.25f;
        isMistake = true;
+       currentTime += timeLost;
    }
 
     public void TaskComplete(int taskNumber)

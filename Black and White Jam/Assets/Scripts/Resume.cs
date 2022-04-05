@@ -44,7 +44,7 @@ public class Resume : MonoBehaviour
             else
             {
                 StartCoroutine(AccessDenied());
-                taskManager.Mistake();
+                taskManager.Mistake(60);
                 fishManager.SendMessageToChat("> Incorrect Input [-60m]");
             }
         }
@@ -52,7 +52,6 @@ public class Resume : MonoBehaviour
 
     IEnumerator AccessGranted()
     {
-        alreadyComplete = true;
         fish.SetActive(false);
         granted.SetActive(true);
         yield return new WaitForSeconds(1.5f);
@@ -65,6 +64,7 @@ public class Resume : MonoBehaviour
         if (!alreadyComplete)
         {
             fishManager.SendMessageToChat("> Task Completed! [Find Resume]");
+            alreadyComplete = true;
         }
         Destroy(gameObject);
     }

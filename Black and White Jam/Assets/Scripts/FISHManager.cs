@@ -12,6 +12,11 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
    List<Message> messageList = new List<Message>();
    [SerializeField] RectTransform dragRectTransform;
 
+   void Awake()
+   {
+       SendMessageToChat("> COMPLETE ALL TASKS BY THE END OF THE DAY");
+   }
+
    public void SendMessageToChat(string text)
    {
        if (messageList.Count >= maxMessages)

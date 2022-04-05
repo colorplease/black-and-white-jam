@@ -8729,6 +8729,8 @@ MonoBehaviour:
   isMinimizing: 0
   isMaximizing: 0
   shakeaShakea: {fileID: 0}
+  fishManager: {fileID: 0}
+  instructions: '> Instruction: Complete the Captchas'
 --- !u!114 &7733449749691993407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9233,7 +9235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.5, y: 107.7}
+  m_AnchoredPosition: {x: 135.11, y: 107.7}
   m_SizeDelta: {x: 1437.679, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5745732006082497306
@@ -9264,7 +9266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'ok you are not fish :thumbsup:'
+  m_text: 'ok you are fish :thumbsup:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
   m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}

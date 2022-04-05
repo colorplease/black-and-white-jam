@@ -9,6 +9,7 @@ public class CaptchaType : MonoBehaviour
     [SerializeField] TaskManager taskManager;
     [SerializeField] FISHManager fishManager;
     [SerializeField] Captcha captcha;
+    bool alreadyComplete;
     // Update is called once per frame
 
     void Awake()
@@ -23,8 +24,13 @@ public class CaptchaType : MonoBehaviour
             string passwordTry = inputField.text;
             if (passwordTry.Equals("i love fish"))
             {
-                taskManager.TaskComplete(4);
-                fishManager.SendMessageToChat("> Task Completed! [Fish Verification]");
+                
+                if (!alreadyComplete)
+                {
+                    alreadyComplete = true;
+                    taskManager.TaskComplete(4);
+                    fishManager.SendMessageToChat("> Task Completed! [Fish Verification]");
+                }
                 captcha.rightFish();
             }
             else if (passwordTry.Equals("fish"))
@@ -34,7 +40,7 @@ public class CaptchaType : MonoBehaviour
             }
             else
             {
-                taskManager.Mistake();
+                taskManager.Mistake(60);
                 fishManager.SendMessageToChat("> Incorrect Input [-60m]");
                 inputField.Select();                
                 inputField.text = "";

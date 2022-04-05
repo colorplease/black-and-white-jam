@@ -2497,6 +2497,8 @@ MonoBehaviour:
   isMinimizing: 0
   isMaximizing: 0
   shakeaShakea: {fileID: 0}
+  fishManager: {fileID: 0}
+  instructions: '> Instruction: Find Resume.txt'
 --- !u!1 &7981828174519929173
 GameObject:
   m_ObjectHideFlags: 0
