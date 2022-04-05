@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 1195644219378454732}
   m_Layer: 5
   m_Name: Resume(fake)[fake] Window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

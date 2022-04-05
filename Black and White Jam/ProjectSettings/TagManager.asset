@@ -13,6 +13,7 @@ TagManager:
   - yes
   - no
   - virus
+  - NoMiniWindow
   layers:
   - Default
   - TransparentFX

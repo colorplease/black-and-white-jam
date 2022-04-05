@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 8863633649749387203}
   m_Layer: 5
   m_Name: Resume(fake) Window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

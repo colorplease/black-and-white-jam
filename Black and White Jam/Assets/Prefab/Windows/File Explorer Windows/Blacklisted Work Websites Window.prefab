@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 301074897514143157}
   m_Layer: 5
   m_Name: Blacklisted Work Websites Window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

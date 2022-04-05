@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: -6701508243029881191}
   m_Layer: 5
   m_Name: Group Research Project Window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 8041324042557955105}
   m_Layer: 5
   m_Name: Work Window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

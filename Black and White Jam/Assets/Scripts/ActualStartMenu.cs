@@ -11,6 +11,7 @@ public class ActualStartMenu : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerEnter(PointerEventData eventData)
     {
         closeMenuMenu = false;
+        transform.SetAsLastSibling();
     }
 
      public void OnPointerExit(PointerEventData eventData)

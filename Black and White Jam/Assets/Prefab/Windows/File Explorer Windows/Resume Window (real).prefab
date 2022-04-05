@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 8964183997353804269}
   m_Layer: 5
   m_Name: Resume Window (real)
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: -8837693569235301545}
   m_Layer: 5
   m_Name: sad
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

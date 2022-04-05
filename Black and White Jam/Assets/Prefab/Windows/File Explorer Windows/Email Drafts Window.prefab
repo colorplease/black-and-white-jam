@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 3887695955371438863}
   m_Layer: 5
   m_Name: Email Drafts Window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

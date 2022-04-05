@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 5188485434736227097}
   m_Layer: 5
   m_Name: FISH Window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

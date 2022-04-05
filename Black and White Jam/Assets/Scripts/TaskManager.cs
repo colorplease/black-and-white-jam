@@ -16,6 +16,7 @@ public class TaskManager : MonoBehaviour
 // 7: -364.3
 // 8: -296.7
    public RectTransform[] shortcuts;
+   [SerializeField] Transform notePad;
    GameObject[] shortcutsGameObjects;
    GameObject[] crossOutsGameObjects;
    public GameObject ToDo;
@@ -173,6 +174,7 @@ public class TaskManager : MonoBehaviour
         tempColor2.a = 1f;
         crossOuts[taskNumber].color = tempColor2;
         numberOfTasksCompleted++;
+        notePad.SetAsLastSibling();
         
     }
    }

@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7980008166718192537}
   m_Layer: 5
   m_Name: I want to go home window
-  m_TagString: Window
+  m_TagString: NoMiniWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
