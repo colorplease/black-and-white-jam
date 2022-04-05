@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6249f0342aa047844a86628b805f82a3
+guid: 81d42597a8d219a4f8559776db430ca0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -143,10 +143,10 @@ TextureImporter:
       name: fish_legswhite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4800
-        width: 1600
-        height: 1600
+        x: 556
+        y: 5278
+        width: 366
+        height: 1003
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: fish_legswhite_1
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 4800
-        width: 1600
-        height: 1600
+        x: 1856
+        y: 4956
+        width: 1025
+        height: 1325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: fish_legswhite_2
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 4800
-        width: 1600
-        height: 1600
+        x: 3456
+        y: 4856
+        width: 825
+        height: 1325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: fish_legswhite_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3200
-        width: 1600
-        height: 1600
+        x: 537
+        y: 3256
+        width: 525
+        height: 1366
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: fish_legswhite_4
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 3200
-        width: 1600
-        height: 1600
+        x: 2137
+        y: 3256
+        width: 685
+        height: 1425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: fish_legswhite_5
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 3200
-        width: 1600
-        height: 1600
+        x: 3519
+        y: 3256
+        width: 943
+        height: 1488
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: fish_legswhite_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1600
-        width: 1600
-        height: 1600
+        x: 137
+        y: 1756
+        width: 1244
+        height: 1366
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: fish_legswhite_7
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 1600
-        width: 1600
-        height: 1600
+        x: 1897
+        y: 1678
+        width: 925
+        height: 1344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +311,10 @@ TextureImporter:
       name: fish_legswhite_8
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 1600
-        width: 1600
-        height: 1600
+        x: 3678
+        y: 1678
+        width: 484
+        height: 1384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: fish_legswhite_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1600
-        height: 1600
+        x: 397
+        y: 37
+        width: 765
+        height: 1444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: fish_legswhite_10
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 1600
-        height: 1600
+        x: 1797
+        y: 56
+        width: 1125
+        height: 1466
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: fish_legswhite_11
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 0
-        width: 1600
-        height: 1600
+        x: 3456
+        y: 178
+        width: 1166
+        height: 1325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

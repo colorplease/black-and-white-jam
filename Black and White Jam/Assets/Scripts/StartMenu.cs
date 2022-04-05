@@ -9,6 +9,7 @@ public class StartMenu : MonoBehaviour, ISelectHandler, IPointerDownHandler, IDe
     public TextMeshProUGUI startText;
     public GameObject startMenu;
     public ActualStartMenu actualStartMenu;
+    int tap;
 
     void Awake()
     {
@@ -18,6 +19,7 @@ public class StartMenu : MonoBehaviour, ISelectHandler, IPointerDownHandler, IDe
     {
         startText.color = Color.black;
         startMenu.SetActive(true);
+        startMenu.transform.SetAsLastSibling();
     }
 
     public void OnDeselect(BaseEventData eventData)
