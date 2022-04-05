@@ -49,6 +49,11 @@ public class Window : MonoBehaviour
         isMaximizing = true;
     }
 
+    public void Focus()
+    {
+        transform.localPosition = new Vector3(Random.Range(-100, 100) / shakeaShakea.localScale.x, Random.Range(-87, 155) / shakeaShakea.localScale.y, 843.8246f);
+    }
+
     void Update()
     {
         if (isMinimizing)

@@ -14,5 +14,6 @@ public class Shortcut : MonoBehaviour
         }
 
         window.gameObject.transform.SetAsLastSibling();
+        window.Focus();
     }
 }
