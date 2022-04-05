@@ -11,6 +11,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
     [SerializeField]
    List<Message> messageList = new List<Message>();
    [SerializeField] RectTransform dragRectTransform;
+   [SerializeField]int currentMessage;
 
    void Awake()
    {
@@ -31,6 +32,12 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
        newMessage.textObject.text = newMessage.text;
        messageList.Add(newMessage);
        dragRectTransform.SetAsLastSibling();
+       messageList[currentMessage].textObject.fontSize = 45;
+       if (currentMessage != 0)
+       {
+           messageList[currentMessage - 1].textObject.fontSize = 36;
+       }
+       currentMessage++;
    }
 
    public void OnPointerDown(PointerEventData eventData)

@@ -5477,6 +5477,7 @@ MonoBehaviour:
   textObject: {fileID: 5953200104480133378, guid: 6fb2f32977ce55d49a2539e2c78409f1, type: 3}
   messageList: []
   dragRectTransform: {fileID: 1618613161}
+  currentMessage: 0
 --- !u!222 &2426831357266378216
 CanvasRenderer:
   m_ObjectHideFlags: 0

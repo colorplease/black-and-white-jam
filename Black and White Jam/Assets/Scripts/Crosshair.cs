@@ -35,6 +35,21 @@ public class Crosshair : MonoBehaviour
        }
    }
 
+   void Update()
+   {
+       viruses = GameObject.FindGameObjectsWithTag("virus");
+       if (viruses.Length == 0)
+       {
+           if (!alreadyComplete)
+           {
+               taskManager.TaskComplete(5);
+               fishManager.SendMessageToChat("> Task Completed! [Clean Up Junk]");
+               done = true;
+               alreadyComplete = true;
+           }
+       }
+   }
+
    public void FileDeleted()
    {
        taskManager.Mistake(30);

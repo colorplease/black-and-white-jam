@@ -6047,7 +6047,7 @@ MonoBehaviour:
   isMaximizing: 0
   shakeaShakea: {fileID: 0}
   fishManager: {fileID: 0}
-  instructions: '> Instruction: Destroy all .virus files'
+  instructions: '> Instruction: Destroy all .virus files (Click)'
 --- !u!114 &8030180345429623560
 MonoBehaviour:
   m_ObjectHideFlags: 0
