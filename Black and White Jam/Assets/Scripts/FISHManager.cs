@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class TutorialDialogue
@@ -103,12 +104,13 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             tutorialObjects[0].SetActive(false);
             tutorialObjects[3].SetActive(true);
             windows = GameObject.FindGameObjectsWithTag("Window");
-        windowScripts = new Window[windows.Length];
-        for (int i = 0; i < windows.Length; i++)
-        {
+            windowScripts = new Window[windows.Length];
+            for (int i = 0; i < windows.Length; i++)
+            {
             windowScripts[i] = windows[i].GetComponent<Window>();
             windowScripts[i].Close();
-        }
+            }
+            StartCoroutine(Set());
             break;
             
             case 4:
@@ -127,7 +129,26 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             currentDialogue++;
             tutorialObjects[4].SetActive(true);
             tutorialObjects[2].transform.SetAsLastSibling();
+            StartCoroutine(Set());
             break;
+
+            case 7:
+            currentDialogue++;
+            updateCall = true;
+            callNumber = setNumber;
+            break;
+
+            case 8:
+            currentDialogue++;
+            GameObject.FindGameObjectWithTag("tutorial").GetComponent<TutorialButton>().button.SetActive(true);
+            StartCoroutine(Set());
+            break;
+
+            case 9:
+            SceneManager.LoadScene(1);
+            break;
+            
+
 
 
         }
@@ -180,6 +201,15 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
                         updateCall = false;
                     }
                 break;
+
+                case 7: 
+                if (GameObject.FindGameObjectWithTag("NoMiniWindow") != null)
+                    {
+                        StartCoroutine(Set());
+                        updateCall = false;
+                    }
+                break;
+
             }
         }
     }

@@ -15,6 +15,7 @@ TagManager:
   - virus
   - NoMiniWindow
   - circle
+  - tutorial
   layers:
   - Default
   - TransparentFX

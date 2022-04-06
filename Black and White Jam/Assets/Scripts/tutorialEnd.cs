@@ -52,7 +52,7 @@ public class tutorialEnd : MonoBehaviour
         GameObject window = Instantiate(windowToOpen, new Vector3(Random.Range(-100, 100) / shakeaShakea.localScale.x, Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
         window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
         window.transform.SetParent(shakeaShakea); 
-        taskManager.TaskComplete(1);
+        taskManager.TaskComplete(0);
         if (!alreadyComplete)
         {
             fishManager.SendMessageToChat("> Task Completed! [Complete Tutorial]");

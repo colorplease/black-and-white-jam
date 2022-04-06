@@ -3077,7 +3077,7 @@ GameObject:
   - component: {fileID: 1411058816}
   - component: {fileID: 1411058815}
   - component: {fileID: 1411058814}
-  - component: {fileID: 1411058813}
+  - component: {fileID: 1411058817}
   m_Layer: 5
   m_Name: Icon Button
   m_TagString: Untagged
@@ -3105,22 +3105,6 @@ RectTransform:
   m_AnchoredPosition: {x: 880.49005, y: 992.04736}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1411058813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411058811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd84d55e9228bb646912480218ce2f84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowToOpen: {fileID: 7085511581586562471, guid: ad000e32707a40c4f8a66afb209e3446, type: 3}
-  shortcutToOpen: {fileID: 5123127269252684393, guid: a80812d978309b044b88d54fe4fff165, type: 3}
-  Canvas: {fileID: 487024986}
-  shakeaShakea: {fileID: 0}
 --- !u!114 &1411058814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,6 +3187,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411058811}
   m_CullTransparentMesh: 1
+--- !u!114 &1411058817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411058811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba613c8853563e14a8c14beecebaa177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowToOpen: {fileID: 7085511581586562471, guid: ad000e32707a40c4f8a66afb209e3446, type: 3}
+  Canvas: {fileID: 0}
+  shakeaShakea: {fileID: 0}
 --- !u!1 &1418329675
 GameObject:
   m_ObjectHideFlags: 0
@@ -5222,6 +5221,11 @@ MonoBehaviour:
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 1
+  - tutorialDialogue: '> KatF!sh: You can "focus" and move the window by clicking
+      it at the top'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 0
   - tutorialDialogue: '> KatF!sh: Now complete the task'
     timeBetweenNextDialogue: 4
     breakTime: 0
@@ -5290,12 +5294,12 @@ MonoBehaviour:
     setNumberCall: 2
   - tutorialDialogue: '> System: Downloading... (99.99999%)'
     timeBetweenNextDialogue: 0
-    breakTime: 0
+    breakTime: 1
     setNumberCall: 3
   - tutorialDialogue: '> Instruction: Open "tutorialEnd.exe"'
     timeBetweenNextDialogue: 0
     breakTime: 1
-    setNumberCall: 3
+    setNumberCall: 7
   - tutorialDialogue: '> KatF!sh: What?'
     timeBetweenNextDialogue: 4
     breakTime: 0
@@ -5305,16 +5309,60 @@ MonoBehaviour:
     breakTime: 0
     setNumberCall: 0
   - tutorialDialogue: '> KatF!sh: The password has got to be here somewhere...'
-    timeBetweenNextDialogue: 4
+    timeBetweenNextDialogue: 0
     breakTime: 1
     setNumberCall: 6
-  currentDialogue: 0
+  - tutorialDialogue: '> Instruction: Complete the Tutorial'
+    timeBetweenNextDialogue: 0
+    breakTime: 1
+    setNumberCall: 4
+  - tutorialDialogue: '> KatF!sh: Ah that''s where it went'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: Good eye'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: I''m sure you''ll do fine on the job'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: Click that button when you''re ready to continue'
+    timeBetweenNextDialogue: 0
+    breakTime: 1
+    setNumberCall: 8
+  - tutorialDialogue: '> KatF!sh: I said to click that button when you''re ready
+      to continue'
+    timeBetweenNextDialogue: 10
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: Bro come on we don''t have all day'
+    timeBetweenNextDialogue: 10
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: You know i have to sit here until you click that
+      button right?'
+    timeBetweenNextDialogue: 10
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: Bro HURRY UP'
+    timeBetweenNextDialogue: 10
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: You know what, i''ll just press the button for
+      you'
+    timeBetweenNextDialogue: 0
+    breakTime: 1
+    setNumberCall: 9
+  currentDialogue: 20
   tutorial: 1
   tutorialObjects:
   - {fileID: 136124472}
   - {fileID: 1148440124}
   - {fileID: 1380983598}
   - {fileID: 1651271647}
+  - {fileID: 967736901}
   taskManager: {fileID: 0}
   complete: 0
 --- !u!222 &2426831357266378216

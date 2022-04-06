@@ -1612,6 +1612,6 @@ MonoBehaviour:
   denied: {fileID: 1418592094668689205}
   taskManager: {fileID: 0}
   fishManager: {fileID: 0}
-  windowToOpen: {fileID: 0}
+  windowToOpen: {fileID: 4502024810352286146, guid: 210849273a2c25746ad7dec0727438e3, type: 3}
   Canvas: {fileID: 0}
   shakeaShakea: {fileID: 0}
