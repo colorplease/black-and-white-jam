@@ -7,8 +7,12 @@ public class FishController : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     [SerializeField]SpriteRenderer spriteRenderer;
+    [SerializeField]Animator animator;
 
-    Vector2 movement;
+    [SerializeField]Vector2 movement;
+    [SerializeField]GameObject trash;
+    [SerializeField]GameObject trashFish;
+    [SerializeField]GameObject trashText;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +33,30 @@ public class FishController : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
+        if (movement.x != 0 || movement.y != 0)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
+
+        
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "trash")
+        {
+            trashFish.SetActive(false);
+            trashText.SetActive(false);
+            trash.SetActive(true);
+        }
     }
 }

@@ -16,6 +16,7 @@ TagManager:
   - NoMiniWindow
   - circle
   - tutorial
+  - trash
   layers:
   - Default
   - TransparentFX
