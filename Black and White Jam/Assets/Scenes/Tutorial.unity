@@ -5355,7 +5355,7 @@ MonoBehaviour:
     timeBetweenNextDialogue: 0
     breakTime: 1
     setNumberCall: 9
-  currentDialogue: 20
+  currentDialogue: 0
   tutorial: 1
   tutorialObjects:
   - {fileID: 136124472}
