@@ -25,6 +25,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
    [SerializeField]int currentDialogue;
    [SerializeField]bool tutorial;
    [SerializeField]GameObject[] tutorialObjects;
+   [SerializeField]TaskManager taskManager;
    bool updateCall;
    public bool complete;
    int callNumber;
@@ -33,6 +34,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
 
    void Awake()
    {
+        taskManager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<TaskManager>();
        if (!tutorial)
        {
            SendMessageToChat("> COMPLETE ALL TASKS BY THE END OF THE DAY");
@@ -58,8 +60,8 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
        newMessage.textObject.text = newMessage.text;
        messageList.Add(newMessage);
        dragRectTransform.SetAsLastSibling();
-       messageList[currentMessage].textObject.fontSize = 45;
-       if (currentMessage != 0)
+       messageList[currentMessage].textObject.fontSize = 42;
+       if (currentMessage > 0)
        {
            messageList[currentMessage - 1].textObject.fontSize = 36;
        }
@@ -80,6 +82,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             tutorialObjects[0].SetActive(true);
             tutorialObjects[1].SetActive(true);
             tutorialObjects[2].SetActive(true);
+            taskManager.UpdateToDoList();
             StartCoroutine(Set());
             break;
 
@@ -120,6 +123,12 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             callNumber = setNumber;
             break;
 
+            case 6:
+            currentDialogue++;
+            tutorialObjects[4].SetActive(true);
+            tutorialObjects[2].transform.SetAsLastSibling();
+            break;
+
 
         }
     }
@@ -141,6 +150,8 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
                 case 2:
                 if (GameObject.FindGameObjectWithTag("circle") == null)
                 {
+                    taskManager.TaskComplete(1);
+                    SendMessageToChat("> Task Completed! [Click the Circles]");
                     StartCoroutine(Set());
                     updateCall = false;
                 }
@@ -183,7 +194,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
         }
         else
         {
-            currentDialogue++;
+            currentDialogue += 1;
             StartCoroutine(Set());
         }
         

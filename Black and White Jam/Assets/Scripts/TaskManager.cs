@@ -55,6 +55,19 @@ public class TaskManager : MonoBehaviour
        
    }
 
+   public void UpdateToDoList()
+   {
+        crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
+       crossOuts = new Image[crossOutsGameObjects.Length];
+       for (int i = 0; i < crossOutsGameObjects.Length; i++)
+       {
+           crossOuts[i] = crossOutsGameObjects[i].GetComponent<Image>();
+           var tempColor = crossOuts[i].color;
+           tempColor.a = 0f;
+           crossOuts[i].color = tempColor;
+       }
+   }
+
    void UpdateShortcut()
    {
        shortcutsGameObjects = GameObject.FindGameObjectsWithTag("Shortcut");

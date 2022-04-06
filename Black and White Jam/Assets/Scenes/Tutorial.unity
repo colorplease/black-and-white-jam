@@ -3778,7 +3778,9 @@ MonoBehaviour:
   notePad: {fileID: 1380983599}
   ToDo: {fileID: 3189367289175038937, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
   ToDoShortcut: {fileID: 8857332717664159660, guid: dfcd57c14c4149b45a39e018438ec76e, type: 3}
-  crossOuts: []
+  crossOuts:
+  - {fileID: 5166868183605906004}
+  - {fileID: 1559935492999554157}
   currentShortcutInt: 0
   shakeaShakea: {fileID: 0}
   shakeDuration: 0
@@ -4945,8 +4947,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116.63, y: -4.1}
-  m_SizeDelta: {x: 424.9, y: 7.36}
+  m_AnchoredPosition: {x: -125.3, y: -4.1}
+  m_SizeDelta: {x: 411.6, y: 7.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559935492999554157
 MonoBehaviour:
@@ -5078,7 +5080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fd887b9e837df48bc88c62c69273bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMessages: 25
+  maxMessages: 100
   chatPanel: {fileID: 1243192324}
   textObject: {fileID: 5953200104480133378, guid: 6fb2f32977ce55d49a2539e2c78409f1, type: 3}
   messageList: []
@@ -5294,13 +5296,26 @@ MonoBehaviour:
     timeBetweenNextDialogue: 0
     breakTime: 1
     setNumberCall: 3
-  currentDialogue: 40
+  - tutorialDialogue: '> KatF!sh: What?'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: It''s locked?'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: The password has got to be here somewhere...'
+    timeBetweenNextDialogue: 4
+    breakTime: 1
+    setNumberCall: 6
+  currentDialogue: 0
   tutorial: 1
   tutorialObjects:
   - {fileID: 136124472}
   - {fileID: 1148440124}
   - {fileID: 1380983598}
   - {fileID: 1651271647}
+  taskManager: {fileID: 0}
   complete: 0
 --- !u!222 &2426831357266378216
 CanvasRenderer:
@@ -5729,7 +5744,7 @@ GameObject:
   - component: {fileID: 5694426177905032887}
   - component: {fileID: 6206462032389403396}
   m_Layer: 5
-  m_Name: Unlock Tutorial.txt
+  m_Name: Click the Circles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5821,7 +5836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unlock Tutorial.txt
+  m_text: Circle the Circles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
   m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
