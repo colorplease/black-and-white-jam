@@ -24,6 +24,7 @@ TagManager:
   - garbage
   - dump
   - recycle
+  - wire
   layers:
   - Default
   - TransparentFX
