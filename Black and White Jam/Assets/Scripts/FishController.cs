@@ -14,9 +14,8 @@ public class FishController : MonoBehaviour
     [SerializeField]GameObject trashFish;
     [SerializeField]GameObject trashText;
     [SerializeField]Transform camera;
-    [SerializeField]float[] xLimits;
-    [SerializeField]float[] xPos;
-    [SerializeField]int limit;
+    [SerializeField]GameObject[] rooms;
+    int roomNumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,23 +45,6 @@ public class FishController : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
 
-        if (xLimits[limit] < transform.position.x)
-        {
-            if (camera.position != new Vector3 (xPos[limit + 1], camera.position.y, camera.position.z))
-            {
-                limit++;
-                camera.position = new Vector3 (xPos[limit], camera.position.y, camera.position.z);
-            }
-        }
-        if (xLimits[limit - 1] > transform.position.x)
-        {
-            if (camera.position != new Vector3 (xPos[limit - 1 ], camera.position.y, camera.position.z))
-            {
-                limit--;
-                camera.position = new Vector3 (xPos[limit], camera.position.y, camera.position.z);
-            }
-        }
-
         
     }
 
@@ -79,6 +61,31 @@ public class FishController : MonoBehaviour
             trashText.SetActive(false);
             trash.SetActive(true);
         }
+        if (other.tag == "border")
+        {
+            if (trash.activeSelf)
+            { 
+                roomNumber++;
+                for (int i = 0; i < rooms.Length; i++)
+                {
+                    rooms[i].SetActive(false);
+                }
+                rooms[roomNumber].SetActive(true);
+                camera.position = new Vector3 (camera.position.x + 842, camera.position.y, camera.position.z);
+                transform.position = new Vector3(transform.position.x + 100, transform.position.y, transform.position.z);
+            }
+        }
+        if (other.tag == "fishCar")
+        {
+             roomNumber = 0;
+             for (int i = 0; i < rooms.Length; i++)
+                {
+                    rooms[i].SetActive(false);
+                }
+                rooms[roomNumber].SetActive(true);
+             camera.localPosition = new Vector3 (0.2f, camera.localPosition.y, camera.localPosition.z);
+            transform.localPosition = new Vector3(-49.16f, 45.2f, transform.localPosition.z);
+
+        }
     }
-    
 }

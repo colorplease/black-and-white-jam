@@ -18,6 +18,9 @@ TagManager:
   - tutorial
   - trash
   - border
+  - wall
+  - fishCar
+  - fishCarFix
   layers:
   - Default
   - TransparentFX

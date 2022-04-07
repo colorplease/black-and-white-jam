@@ -61,8 +61,9 @@ public class FishType : MonoBehaviour
                     CHEATER = true;
                 }
             }
-            lastWordCount = inputField.text.Length;
-            if (inputField.text.Length >= 200 && !alreadyComplete)
+            else
+            {
+                if (inputField.text.Length >= wordLimit && !alreadyComplete && CHEATER == false)
         {
             taskManager.TaskComplete(0);
             fishManager.SendMessageToChat("> Task Completed! [Draft a Report]");
@@ -70,6 +71,8 @@ public class FishType : MonoBehaviour
             completedlol.SetActive(true);
             alreadyComplete = true;
         }
+            }
+            lastWordCount = inputField.text.Length;
             timeBetweenTypeSpeedCheck = startTime;
         }
 

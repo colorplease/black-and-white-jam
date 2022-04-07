@@ -2200,7 +2200,7 @@ MonoBehaviour:
   words: {fileID: 1379772808711415647}
   cheater: {fileID: 1379772809351874787}
   completedlol: {fileID: 1379772809440869162}
-  wordLimit: 200
+  wordLimit: 400
 --- !u!1 &7895992140616441169
 GameObject:
   m_ObjectHideFlags: 0
