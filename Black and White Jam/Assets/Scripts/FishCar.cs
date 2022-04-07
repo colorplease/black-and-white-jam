@@ -8,8 +8,10 @@ public class FishCar : MonoBehaviour
     public float waitTime;
     public Animator animator;
 
-   void Awake()
+   void OnEnable()
    {
+       animator.Rebind();
+       animator.Update(0f);
        animator.enabled = false;
        StartCoroutine(drive());
    }

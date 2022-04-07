@@ -13,13 +13,20 @@ public class FishController : MonoBehaviour
     [SerializeField]GameObject trash;
     [SerializeField]GameObject trashFish;
     [SerializeField]GameObject trashText;
+    [SerializeField]GameObject dumpText;
+    [SerializeField]Sprite closedDump;
+    [SerializeField]SpriteRenderer dump;
     [SerializeField]Transform camera;
     [SerializeField]GameObject[] rooms;
+    [SerializeField] TaskManager taskManager;
+    [SerializeField] FISHManager fishManager;
     int roomNumber;
-    // Start is called before the first frame update
-    void Start()
+    bool alreadyComplete;
+    void Awake()
     {
-        
+        taskManager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<TaskManager>();
+        fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
+        alreadyComplete = false;
     }
 
     // Update is called once per frame
@@ -45,6 +52,20 @@ public class FishController : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
 
+        if (roomNumber == 5)
+        {
+            dumpText.transform.localScale = new Vector3(0.8333333f, 0.8333333f, 1f);
+        }
+
+        if (trashText == null)
+        {
+        trashText = GameObject.FindGameObjectWithTag("fishCarFix");
+        }
+        if (dumpText == null)
+        {
+            dumpText = GameObject.FindGameObjectWithTag("dump");
+        }
+
         
     }
 
@@ -64,8 +85,10 @@ public class FishController : MonoBehaviour
         if (other.tag == "border")
         {
             if (trash.activeSelf)
-            { 
-                roomNumber++;
+            {
+                if (roomNumber != 5)
+                {
+                    roomNumber++;
                 for (int i = 0; i < rooms.Length; i++)
                 {
                     rooms[i].SetActive(false);
@@ -73,6 +96,8 @@ public class FishController : MonoBehaviour
                 rooms[roomNumber].SetActive(true);
                 camera.position = new Vector3 (camera.position.x + 842, camera.position.y, camera.position.z);
                 transform.position = new Vector3(transform.position.x + 100, transform.position.y, transform.position.z);
+                } 
+                
             }
         }
         if (other.tag == "fishCar")
@@ -85,6 +110,21 @@ public class FishController : MonoBehaviour
                 rooms[roomNumber].SetActive(true);
              camera.localPosition = new Vector3 (0.2f, camera.localPosition.y, camera.localPosition.z);
             transform.localPosition = new Vector3(-49.16f, 45.2f, transform.localPosition.z);
+            taskManager.Mistake(30);
+            fishManager.SendMessageToChat("hit by (fish?) car [-30m]");
+
+        }
+
+        if (other.tag == "garbage")
+        {
+            if (!alreadyComplete)
+            {
+                alreadyComplete = true;
+                taskManager.TaskComplete(2);
+                fishManager.SendMessageToChat("> Task Complete! [Empty Recycle Bin]");
+                dump.sprite = closedDump;
+                trash.SetActive(false);
+            }
 
         }
     }

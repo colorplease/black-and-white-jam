@@ -21,6 +21,9 @@ TagManager:
   - wall
   - fishCar
   - fishCarFix
+  - garbage
+  - dump
+  - recycle
   layers:
   - Default
   - TransparentFX
