@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FishNet : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class FishNet : MonoBehaviour
     [SerializeField] TaskManager taskManager;
     [SerializeField] FISHManager fishManager;
     [SerializeField] GameObject[] puzzles;
+    [SerializeField] TextMeshProUGUI textButton;
     bool alreadyComplete;
+    bool confirmed;
     int currentPuzzle;
 
     void Awake()
@@ -37,8 +40,9 @@ public class FishNet : MonoBehaviour
 
     void Update()
     {
-        if (puzzleCheck())
+        if (puzzleCheck() && confirmed)
         {
+            confirmed = false;
             if (currentPuzzle < 3)
             {
             puzzles[currentPuzzle].SetActive(false);
@@ -58,5 +62,22 @@ public class FishNet : MonoBehaviour
                }
             }
         }
+        else if (!puzzleCheck() && confirmed)
+        {
+            confirmed = false;
+            taskManager.Mistake(30);
+            fishManager.SendMessageToChat("> Not Connected [-30m]");
+        }
+
+        if (!confirmed)
+        {
+            textButton.color = Color.white;
+        }
+    }
+
+    public void Confirm()
+    {
+        textButton.color = Color.black;
+        confirmed = true;
     }
 }

@@ -38,13 +38,31 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
         taskManager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<TaskManager>();
        if (!tutorial)
        {
-           SendMessageToChat("> COMPLETE ALL TASKS BY THE END OF THE DAY");
+           StartCoroutine(intro());
        }
        else
        {
            StartCoroutine(Set());
        }
        
+   }
+
+   IEnumerator intro()
+   {
+       SendMessageToChat("> FINISH ALL TASKS BY THE END OF THE DAY");
+       yield return new WaitForSeconds(4);
+       SendMessageToChat("> TASKS AND WORK HOURS CAN BE FOUND IN YOUR NOTEPAD");
+       yield return new WaitForSeconds(4);
+       SendMessageToChat("> WORK BEGINS IN");
+       yield return new WaitForSeconds(1f);
+       SendMessageToChat("> 3");
+       yield return new WaitForSeconds(2);
+       SendMessageToChat("> 2");
+       yield return new WaitForSeconds(2);
+       SendMessageToChat("> 1");
+       yield return new WaitForSeconds(2);
+       taskManager.StartGame();
+       SendMessageToChat("> GET MOVING");
    }
 
    public void SendMessageToChat(string text)

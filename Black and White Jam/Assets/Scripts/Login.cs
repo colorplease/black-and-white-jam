@@ -31,7 +31,7 @@ public class Login : MonoBehaviour
             suffering += 3;
             string passwordTry =  password.text;
             string usernameTry = username.text;
-            if (passwordTry.Equals("Southeastern Salmon") && usernameTry.Equals("Northwestern Pike"))
+            if (passwordTry.Trim().Equals("Southeastern Salmon") && usernameTry.Trim().Equals("Northwestern Pike"))
             {
                 if (pain <= suffering)
                 {

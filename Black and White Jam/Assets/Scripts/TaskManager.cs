@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour
 {
@@ -36,14 +37,30 @@ public class TaskManager : MonoBehaviour
    public TextMeshProUGUI currentTimeText;
    public bool clockActive;
    bool secondTimeAround;
+   public GameObject[] everything;
+   public GameObject loss;
+   public int loopNumber;
+   FISHManager fishManager;
+   bool win;
+   bool fast;
+   bool lose;
+   bool lost;
+   public int SceneNumber;
 
 
    Vector3 originalPos;
 
    void Awake()
    {
+       lose = false;
+       timeSpeed = 0;
+       for (int i = 0; i < everything.Length; i++)
+       {
+           everything[i].SetActive(false);
+       }
        shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
        crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
+       fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
        crossOuts = new Image[crossOutsGameObjects.Length];
        for (int i = 0; i < crossOutsGameObjects.Length; i++)
        {
@@ -66,6 +83,30 @@ public class TaskManager : MonoBehaviour
            tempColor.a = 0f;
            crossOuts[i].color = tempColor;
        }
+   }
+
+   public void StartGame()
+   {
+       timeSpeed = 0.2f;
+       for (int i = 0; i < everything.Length; i++)
+       {
+           everything[i].SetActive(true);
+       }
+   }
+
+   public void EndGame()
+   {
+       timeSpeed = 0.2f;
+       for (int i = 0; i < everything.Length; i++)
+       {
+           everything[i].SetActive(false);
+       }
+       Mistake(0);
+   }
+
+   public void NextLoop()
+   {
+       SceneManager.LoadScene(SceneNumber);
    }
 
    void UpdateShortcut()
@@ -126,7 +167,34 @@ public class TaskManager : MonoBehaviour
    {
         UpdateShortcut();   
         MistakeHappening();  
-        Clock();  
+        Clock();
+        CompletionCheck();
+   }
+
+   void CompletionCheck()
+   {
+       if (numberOfTasksCompleted == 6 && win == false && loopNumber > 3 && lose == false)
+       {
+           win = true;
+       }
+       else if (numberOfTasksCompleted == 5 && fast == false && loopNumber < 3 && clockActive == false)
+       {
+           Mistake(155);
+           fishManager.SendMessageToChat("> KatF!sh: TO FAST, TOO SOON [-155m]");
+           fast = true;
+       }
+
+       if (lose && !lost)
+       {
+           PlayerPrefs.SetInt("Losses", PlayerPrefs.GetInt("Losses") + 1);
+           PlayerPrefs.SetInt("Loops", PlayerPrefs.GetInt("Loops") + 1);  
+           EndGame();
+           GameObject window = Instantiate(loss, new Vector3(UnityEngine.Random.Range(-100, 100) / shakeaShakea.localScale.x, UnityEngine.Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
+            window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
+            window.transform.SetParent(shakeaShakea);
+            lose = false;
+            lost = true;
+       }
    }
 
    void Clock()
@@ -150,7 +218,7 @@ public class TaskManager : MonoBehaviour
        }
        else
        {
-           Debug.Log("lose");
+           lose = true;
        }
    }
 
