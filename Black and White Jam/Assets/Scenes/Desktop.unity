@@ -5238,6 +5238,7 @@ MonoBehaviour:
   - {fileID: 2121857556}
   taskManager: {fileID: 0}
   fishManager: {fileID: 0}
+  roomNumber: 0
 --- !u!1 &777421939
 GameObject:
   m_ObjectHideFlags: 0
@@ -15326,7 +15327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   waitTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: 2005686210}
 --- !u!1 &2036594270
 GameObject:
   m_ObjectHideFlags: 0

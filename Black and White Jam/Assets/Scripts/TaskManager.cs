@@ -226,7 +226,7 @@ public class TaskManager : MonoBehaviour
            StartCoroutine(winScene());
            EndGame();
        }
-       else if (numberOfTasksCompleted == 5 && fast == false && loopNumber < 3 && clockActive == false)
+       else if (numberOfTasksCompleted >= 5 && fast == false && loopNumber < 3)
        {
            Mistake(155);
            fishManager.SendMessageToChat("> KatF!sh: TO FAST, TOO SOON [-155m]");
