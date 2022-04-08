@@ -24,7 +24,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
    [SerializeField]int currentMessage;
    [SerializeField]TutorialDialogue[] tutorialDialogues;
    [SerializeField]int currentDialogue;
-   [SerializeField]bool tutorial;
+   public bool tutorial;
    [SerializeField]GameObject[] tutorialObjects;
    [SerializeField]TaskManager taskManager;
    bool updateCall;

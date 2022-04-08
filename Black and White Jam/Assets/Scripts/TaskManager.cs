@@ -54,10 +54,6 @@ public class TaskManager : MonoBehaviour
    {
        lose = false;
        timeSpeed = 0;
-       for (int i = 0; i < everything.Length; i++)
-       {
-           everything[i].SetActive(false);
-       }
        shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
        crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
        fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
@@ -68,6 +64,14 @@ public class TaskManager : MonoBehaviour
            var tempColor = crossOuts[i].color;
            tempColor.a = 0f;
            crossOuts[i].color = tempColor;
+       }
+
+       if (!fishManager.tutorial)
+       {
+           for (int i = 0; i < everything.Length; i++)
+            {
+           everything[i].SetActive(false);
+            }
        }
        
    }
