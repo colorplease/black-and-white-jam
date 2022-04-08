@@ -264,7 +264,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
                 {
                     if (Input.GetKey(KeyCode.M))
                     {
-                        SceneManager.LoadScene(1);
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                     }
                 }
             }
