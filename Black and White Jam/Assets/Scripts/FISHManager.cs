@@ -255,6 +255,20 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
 
             }
         }
+
+        if (tutorial)
+        {
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            {
+                if (Input.GetKey(KeyCode.K))
+                {
+                    if (Input.GetKey(KeyCode.M))
+                    {
+                        SceneManager.LoadScene(1);
+                    }
+                }
+            }
+        }
     }
 
     IEnumerator Set()

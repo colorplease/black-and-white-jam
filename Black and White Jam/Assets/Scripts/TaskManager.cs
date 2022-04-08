@@ -106,7 +106,7 @@ public class TaskManager : MonoBehaviour
 
    public void StartGame()
    {
-       timeSpeed = 1.4f;
+       timeSpeed = 1.2f;
        music.Play();
        for (int i = 0; i < everything.Length; i++)
        {
@@ -220,7 +220,7 @@ public class TaskManager : MonoBehaviour
 
    void CompletionCheck()
    {
-       if (numberOfTasksCompleted == 6 && win == false && lose == false)
+       if (numberOfTasksCompleted == 7 && win == false && lose == false)
        {
            win = true;
            StartCoroutine(winScene());
@@ -282,8 +282,8 @@ public class TaskManager : MonoBehaviour
        else
        {
            audioSource.PlayOneShot(sounds[7]);
-           yield return new WaitForSeconds(4);
-           SceneManager.LoadScene(SceneNumber);
+           yield return new WaitForSeconds(2);
+           SceneManager.LoadScene(SceneNumber + 2);
        }
 
    }

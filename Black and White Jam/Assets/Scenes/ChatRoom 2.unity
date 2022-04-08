@@ -4562,7 +4562,28 @@ MonoBehaviour:
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: I''m sure that''ll help you out'
+  - tutorialDialogue: '> KatF!sh: You know...'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 12
+  - tutorialDialogue: '> KatF!sh: You don''t have to finish these tasks'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 12
+  - tutorialDialogue: '> KatF!sh: Why not go do something else?'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 12
+  - tutorialDialogue: '> KatF!sh: Something more productive with your life'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 12
+  - tutorialDialogue: '> KatF!sh: Oh well'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 12
+  - tutorialDialogue: '> KatF!sh: I don''t ever really see you finishing these things
+      anyway'
     timeBetweenNextDialogue: 4
     breakTime: 1
     setNumberCall: 12

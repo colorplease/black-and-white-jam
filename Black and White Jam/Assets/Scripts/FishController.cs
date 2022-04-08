@@ -20,7 +20,7 @@ public class FishController : MonoBehaviour
     [SerializeField]GameObject[] rooms;
     [SerializeField] TaskManager taskManager;
     [SerializeField] FISHManager fishManager;
-    int roomNumber;
+    public int roomNumber;
     bool alreadyComplete;
     void Awake()
     {

@@ -4458,6 +4458,10 @@ MonoBehaviour:
   dragRectTransform: {fileID: 1618613161}
   currentMessage: 0
   tutorialDialogues:
+  - tutorialDialogue: '> System: Input "Shift K M" to Skip the Tutorial'
+    timeBetweenNextDialogue: 0
+    breakTime: 0
+    setNumberCall: 9
   - tutorialDialogue: '> KatF!sh: alright so uh'
     timeBetweenNextDialogue: 4
     breakTime: 0
