@@ -18,6 +18,7 @@ public class File : MonoBehaviour, IPointerDownHandler
     [SerializeField]AudioSource audioSource;
     void Awake()
     {
+        speed = 100;
         audioSource = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<AudioSource>();
         StartCoroutine(moveit());
         if (isVirus)
@@ -32,22 +33,24 @@ public class File : MonoBehaviour, IPointerDownHandler
 
     void Update()
     {
-        if (canMove)
-        {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, move, speed);
-        }
 
         if (crossHair.done == true)
         {
             canMove = false;
         }
-        
     }
 
+    void FixedUpdate()
+    {
+        if (canMove)
+        {
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, move, speed);
+        }
+    }
     IEnumerator moveit()
     {
         waitTime = Random.Range(0.5f, 3f);
-        speed = Random.Range(0.5f, 1);
+        speed = Random.Range(1, 5);
         move = new Vector3(Random.Range(-1449.83f, -307.8f), Random.Range(-1283f, -719.5f), 1);
         yield return new WaitForSeconds(waitTime);
         StartCoroutine(moveit());

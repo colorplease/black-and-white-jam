@@ -11,7 +11,7 @@ public class FishType : MonoBehaviour
     [SerializeField] TaskManager taskManager;
     [SerializeField] FISHManager fishManager;
     [SerializeField] Animator decorFish;
-    float timeBetweenTypeSpeedCheck;
+    [SerializeField]float timeBetweenTypeSpeedCheck;
     [SerializeField]float speedMultiplier;
     [SerializeField]float startTime;
     bool alreadyComplete;
@@ -34,9 +34,8 @@ public class FishType : MonoBehaviour
         CHEATER = false;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-
         if (!alreadyComplete)
         {
             countWord.text = inputField.text.Length.ToString();
@@ -48,9 +47,10 @@ public class FishType : MonoBehaviour
         }
         else
         {
+            timeBetweenTypeSpeedCheck = 0.05f;
             var wordDiff = inputField.text.Length - lastWordCount;
             decorFish.speed = Mathf.Clamp(wordDiff * speedMultiplier, 0, 100);
-            if (wordDiff > 50)
+            if (wordDiff > 150)
             {
                 if (!CHEATER)
                 {

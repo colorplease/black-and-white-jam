@@ -2195,6 +2195,7 @@ MonoBehaviour:
   taskManager: {fileID: 0}
   fishManager: {fileID: 0}
   decorFish: {fileID: 1379772809012043046}
+  timeBetweenTypeSpeedCheck: 0.05
   speedMultiplier: 0.1
   startTime: 2.5
   words: {fileID: 1379772808711415647}

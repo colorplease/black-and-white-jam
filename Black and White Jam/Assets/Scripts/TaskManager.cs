@@ -56,12 +56,15 @@ public class TaskManager : MonoBehaviour
     NoMinimizeWindow[] noMinimizeWindowsScripts;
     public AudioSource audioSource;
     public AudioClip[] sounds;
+    public AudioSource music;
+    bool warning;
 
 
    Vector3 originalPos;
 
    void Awake()
    {
+       Application.targetFrameRate = 60;
        timeBetweenRage = 1;
        rageShake = 2;
        lose = false;
@@ -103,7 +106,8 @@ public class TaskManager : MonoBehaviour
 
    public void StartGame()
    {
-       timeSpeed = 0.2f;
+       timeSpeed = 1.4f;
+       music.Play();
        for (int i = 0; i < everything.Length; i++)
        {
            everything[i].SetActive(true);
@@ -112,6 +116,8 @@ public class TaskManager : MonoBehaviour
 
    public void EndGame()
    {
+       music.Stop();
+       audioSource.PlayOneShot(sounds[6]);
        timeSpeed = 0f;
        for (int i = 0; i < everything.Length; i++)
        {
@@ -197,12 +203,16 @@ public class TaskManager : MonoBehaviour
    {
         UpdateShortcut();   
         MistakeHappening();  
-        Clock();
         CompletionCheck();
         if (win)
         {
             ShakeUltra();
         }
+   }
+
+   void FixedUpdate()
+   {
+       Clock();
    }
 
    void CompletionCheck()
@@ -304,6 +314,11 @@ public class TaskManager : MonoBehaviour
            {
                clockActive = false;
                secondTimeAround = false;
+           }
+           else if (currentTime < 100 && warning == false)
+           {
+               fishManager.SendMessageToChat("> HURRY UP, LITTLE TIME LEFT");
+               warning = true;
            }
        }
        else
