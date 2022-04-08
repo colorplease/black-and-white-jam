@@ -117,6 +117,8 @@ public class TaskManager : MonoBehaviour
 
    public void EndGame()
    {
+       katfin.enabled = false;
+       katfin.StopAllCoroutines();
        music.Stop();
        audioSource.PlayOneShot(sounds[6]);
        timeSpeed = 0f;
@@ -218,7 +220,7 @@ public class TaskManager : MonoBehaviour
 
    void CompletionCheck()
    {
-       if (numberOfTasksCompleted == 6 && win == false && loopNumber > 3 && lose == false)
+       if (numberOfTasksCompleted == 6 && win == false && lose == false)
        {
            win = true;
            StartCoroutine(winScene());
@@ -262,8 +264,10 @@ public class TaskManager : MonoBehaviour
 
    IEnumerator pain()
    {
-       if (rageNumber < 15)
+       if (rageNumber < 25)
        {
+        var negativeRandom = UnityEngine.Random.Range(0, 2);
+       audioSource.PlayOneShot(sounds[negativeRandom]);
         shakeDuration = 0.25f;
        fishManager.SendMessageToChat("> KatF!sh: NO");
         GameObject window = Instantiate(winObject, new Vector3(UnityEngine.Random.Range(-100, 100) / shakeaShakea.localScale.x, UnityEngine.Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
@@ -277,7 +281,9 @@ public class TaskManager : MonoBehaviour
        }
        else
        {
-           Debug.Log("hey");
+           audioSource.PlayOneShot(sounds[7]);
+           yield return new WaitForSeconds(4);
+           SceneManager.LoadScene(SceneNumber);
        }
 
    }

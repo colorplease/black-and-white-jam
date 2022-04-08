@@ -11499,6 +11499,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 608051f1595372c41b7d02248cc14e9a, type: 3}
   - {fileID: 8300000, guid: 16df30b0a0e045340bcf5cd4b9be0906, type: 3}
   - {fileID: 8300000, guid: 47f09332d7d5e4a439aac12016c3d071, type: 3}
+  - {fileID: 8300000, guid: 3b037727a9d2f7044838a2820763eb65, type: 3}
   music: {fileID: 1619334346}
   katfin: {fileID: 1619334347}
 --- !u!4 &1619334344
