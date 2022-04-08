@@ -54,6 +54,8 @@ public class TaskManager : MonoBehaviour
     Window[] windowScripts;
     GameObject[] noMinimizeWindows;
     NoMinimizeWindow[] noMinimizeWindowsScripts;
+    public AudioSource audioSource;
+    public AudioClip[] sounds;
 
 
    Vector3 originalPos;
@@ -331,6 +333,8 @@ public class TaskManager : MonoBehaviour
 
    public void Mistake(float timeLost)
    {
+       var negativeRandom = UnityEngine.Random.Range(0, 2);
+       audioSource.PlayOneShot(sounds[negativeRandom]);
        PlayerPrefs.SetInt("Mistakes", PlayerPrefs.GetInt("Mistakes") + 1);
        originalPos = shakeaShakea.localPosition;
        shakeDuration = 0.25f;
@@ -340,6 +344,9 @@ public class TaskManager : MonoBehaviour
 
     public void TaskComplete(int taskNumber)
     {
+        PlayerPrefs.SetInt("Tasks", PlayerPrefs.GetInt("Tasks") + 1);  
+        var positiveRandom = UnityEngine.Random.Range(3, 5);
+        audioSource.PlayOneShot(sounds[positiveRandom]);
         var tempColor2 = crossOuts[taskNumber].color;
         tempColor2.a = 1f;
         crossOuts[taskNumber].color = tempColor2;
