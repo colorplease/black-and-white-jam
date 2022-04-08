@@ -32,6 +32,8 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
    int callNumber;
    GameObject[] windows;
     Window[] windowScripts;
+    public AudioSource audioSource;
+    public AudioClip[] sounds;
 
    void Awake()
    {
@@ -67,6 +69,8 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
 
    public void SendMessageToChat(string text)
    {
+       var randomMessage = Random.Range(0, 2);
+       audioSource.PlayOneShot(sounds[randomMessage]);
        if (messageList.Count >= maxMessages)
        {
            Destroy(messageList[0].textObject.gameObject);

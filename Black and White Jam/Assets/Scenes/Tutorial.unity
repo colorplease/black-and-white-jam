@@ -3090,11 +3090,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8ac3a65507a7a5e4c902372677e8e6e2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4773,6 +4773,10 @@ MonoBehaviour:
   - {fileID: 967736901}
   taskManager: {fileID: 0}
   complete: 0
+  audioSource: {fileID: 1619334345}
+  sounds:
+  - {fileID: 8300000, guid: cff526f8609244447a5b3df99c8ec667, type: 3}
+  - {fileID: 8300000, guid: 04bbc6dca28372943b1a1d1666aafb6e, type: 3}
 --- !u!222 &2426831357266378216
 CanvasRenderer:
   m_ObjectHideFlags: 0

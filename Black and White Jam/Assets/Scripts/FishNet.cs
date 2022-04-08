@@ -15,9 +15,12 @@ public class FishNet : MonoBehaviour
     bool alreadyComplete;
     bool confirmed;
     int currentPuzzle;
+    public AudioClip[] sounds;
+    public AudioSource audioSource;
 
     void Awake()
     {
+        audioSource = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<AudioSource>();
         taskManager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<TaskManager>();
         fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
         alreadyComplete = false;
@@ -77,6 +80,8 @@ public class FishNet : MonoBehaviour
 
     public void Confirm()
     {
+        var randomSound = Random.Range(0,3);
+       audioSource.PlayOneShot(sounds[randomSound]);
         textButton.color = Color.black;
         confirmed = true;
     }

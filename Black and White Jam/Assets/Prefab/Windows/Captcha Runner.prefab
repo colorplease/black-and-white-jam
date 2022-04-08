@@ -150,6 +150,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733328302944629
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +994,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 12ade9ffc7d73424a8874d1c215bf7eb, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733328687848033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1301,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733329002598664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1456,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 2f8c659ed065b09499ff7cc0957107e8, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733329053821092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,6 +1611,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733329207789350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,6 +1766,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 81ad280853c9b2a44b292427524289d7, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733329348580250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,6 +1972,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: e5b87eabcfd867e419fc68c0d42d9027, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733329444769309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2486,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733329742149837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,6 +2717,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &19733330150461415
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,6 +3643,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139302704143920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,6 +3798,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139302741556125
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,6 +3953,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 2f8c659ed065b09499ff7cc0957107e8, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139302752297963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,6 +4108,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139302838273729
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4263,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139302866758188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,6 +4418,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303010350453
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,6 +4573,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303018280404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,6 +4728,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303096049549
 GameObject:
   m_ObjectHideFlags: 0
@@ -4798,6 +4883,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: d5cae6ba1b53d094ab9a57682d3ce02a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303413460687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,6 +5038,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303610796073
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,6 +5193,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303644109864
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,6 +5348,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 2f8c659ed065b09499ff7cc0957107e8, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303748562151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,6 +5503,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 2f8c659ed065b09499ff7cc0957107e8, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303791068402
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,6 +5658,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 81ad280853c9b2a44b292427524289d7, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303796311187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5698,6 +5813,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: d5cae6ba1b53d094ab9a57682d3ce02a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139303817404095
 GameObject:
   m_ObjectHideFlags: 0
@@ -5924,6 +6044,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304031419845
 GameObject:
   m_ObjectHideFlags: 0
@@ -6074,6 +6199,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: e5b87eabcfd867e419fc68c0d42d9027, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304036491304
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,6 +6354,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304094598606
 GameObject:
   m_ObjectHideFlags: 0
@@ -6374,6 +6509,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 2f8c659ed065b09499ff7cc0957107e8, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304271767671
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,6 +6664,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304440852384
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,6 +6819,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: 2f8c659ed065b09499ff7cc0957107e8, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304471443396
 GameObject:
   m_ObjectHideFlags: 0
@@ -6824,6 +6974,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304474353768
 GameObject:
   m_ObjectHideFlags: 0
@@ -6974,6 +7129,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: e5b87eabcfd867e419fc68c0d42d9027, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1546139304579067310
 GameObject:
   m_ObjectHideFlags: 0
@@ -7124,6 +7284,11 @@ MonoBehaviour:
   notSelected: {fileID: 21300000, guid: b54a30ad1d71d3d4cbc83d96e7324b9a, type: 3}
   selectedBool: 0
   captcha: {fileID: 7733449749691993407}
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &1721816989277815881
 GameObject:
   m_ObjectHideFlags: 0
@@ -8760,6 +8925,11 @@ MonoBehaviour:
   end: {fileID: 8398174476555175907}
   fishPoints: 0
   fishClickReset: 0
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
 --- !u!1 &7183601807954487968
 GameObject:
   m_ObjectHideFlags: 0

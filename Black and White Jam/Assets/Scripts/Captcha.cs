@@ -20,15 +20,20 @@ public class Captcha : MonoBehaviour
     [SerializeField]GameObject end;
     public int fishPoints;
     public bool fishClickReset;
+    public AudioSource audioSource;
+    public AudioClip[] sounds;
 
     void Awake()
     {
         taskManager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<TaskManager>();
+        audioSource = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<AudioSource>();
         fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
     }
 
     public void YES()
     {
+        var randomSound = Random.Range(0, 3);
+        audioSource.PlayOneShot(sounds[randomSound]);
         StartCoroutine(yes());
     }
 
@@ -39,6 +44,8 @@ public class Captcha : MonoBehaviour
 
     public void Confirm()
    {
+       var randomSound = Random.Range(0, 3);
+        audioSource.PlayOneShot(sounds[randomSound]);
        confirmText.color = Color.black;
        if (fishPoints == 5)
        {

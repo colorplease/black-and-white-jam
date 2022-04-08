@@ -13,6 +13,13 @@ public class captchaSelect : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
     int tap1;
     int tap2;
     int tap3;
+    public AudioSource audioSource;
+    public AudioClip[] sounds;
+
+    void Awake()
+    {
+        audioSource = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<AudioSource>();
+    }
 
    public void OnPointerEnter(PointerEventData pointerEventData)
    {
@@ -21,6 +28,8 @@ public class captchaSelect : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
 
    public void OnPointerDown(PointerEventData pointerEventData)
    {
+       var randomSound = Random.Range(0,3);
+       audioSource.PlayOneShot(sounds[randomSound]);
        tap3 += 1;
        if (tap3 == 1)
        {

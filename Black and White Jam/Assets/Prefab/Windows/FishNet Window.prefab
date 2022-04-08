@@ -173,6 +173,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296035557509587
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +275,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296035559535362
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +605,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296035648505114
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1011,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296035719812308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,6 +1721,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296035967631656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,6 +2696,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036092432400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,6 +2950,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036118905204
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,6 +3204,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036198274282
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,6 +3304,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036206020807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,6 +3406,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036222135021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,6 +3736,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036300511533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4131,6 +4186,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036350877017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,6 +4440,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036364441787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4857,6 +4922,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036500979671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5864,6 +5934,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036678634610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,6 +6211,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036725583749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6231,6 +6311,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036736683273
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,6 +6648,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036801778545
 GameObject:
   m_ObjectHideFlags: 0
@@ -7114,6 +7204,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036898816245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7287,6 +7382,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036902912435
 GameObject:
   m_ObjectHideFlags: 0
@@ -7610,6 +7710,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036925527547
 GameObject:
   m_ObjectHideFlags: 0
@@ -7783,6 +7888,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296036995722356
 GameObject:
   m_ObjectHideFlags: 0
@@ -8320,6 +8430,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037071565753
 GameObject:
   m_ObjectHideFlags: 0
@@ -8493,6 +8608,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037075863605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8818,6 +8938,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037143520884
 GameObject:
   m_ObjectHideFlags: 0
@@ -9219,6 +9344,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037185221990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9754,6 +9884,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037274383362
 GameObject:
   m_ObjectHideFlags: 0
@@ -9851,6 +9986,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037280616077
 GameObject:
   m_ObjectHideFlags: 0
@@ -10174,6 +10314,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037340515757
 GameObject:
   m_ObjectHideFlags: 0
@@ -10875,6 +11020,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037447541228
 GameObject:
   m_ObjectHideFlags: 0
@@ -10970,6 +11120,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037459259884
 GameObject:
   m_ObjectHideFlags: 0
@@ -11369,6 +11524,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &93296037561886753
 GameObject:
   m_ObjectHideFlags: 0
@@ -12170,6 +12330,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092627854336699
 GameObject:
   m_ObjectHideFlags: 0
@@ -12417,6 +12582,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092627970580131
 GameObject:
   m_ObjectHideFlags: 0
@@ -12588,6 +12758,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628000804742
 GameObject:
   m_ObjectHideFlags: 0
@@ -12761,6 +12936,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628032713137
 GameObject:
   m_ObjectHideFlags: 0
@@ -12858,6 +13038,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628060899727
 GameObject:
   m_ObjectHideFlags: 0
@@ -12991,6 +13176,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628089770813
 GameObject:
   m_ObjectHideFlags: 0
@@ -13734,6 +13924,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628287435658
 GameObject:
   m_ObjectHideFlags: 0
@@ -14247,6 +14442,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628408324889
 GameObject:
   m_ObjectHideFlags: 0
@@ -14648,6 +14848,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628548959213
 GameObject:
   m_ObjectHideFlags: 0
@@ -14973,6 +15178,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628587024111
 GameObject:
   m_ObjectHideFlags: 0
@@ -15146,6 +15356,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628651728905
 GameObject:
   m_ObjectHideFlags: 0
@@ -15319,6 +15534,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628744131192
 GameObject:
   m_ObjectHideFlags: 0
@@ -15908,6 +16128,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092628981211546
 GameObject:
   m_ObjectHideFlags: 0
@@ -16005,6 +16230,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629004301815
 GameObject:
   m_ObjectHideFlags: 0
@@ -16102,6 +16332,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629014839047
 GameObject:
   m_ObjectHideFlags: 0
@@ -16526,6 +16761,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629046383069
 GameObject:
   m_ObjectHideFlags: 0
@@ -16851,6 +17091,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629103148940
 GameObject:
   m_ObjectHideFlags: 0
@@ -17252,6 +17497,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629262668543
 GameObject:
   m_ObjectHideFlags: 0
@@ -17651,6 +17901,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629328710298
 GameObject:
   m_ObjectHideFlags: 0
@@ -17900,6 +18155,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629376006754
 GameObject:
   m_ObjectHideFlags: 0
@@ -18338,6 +18598,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629473360017
 GameObject:
   m_ObjectHideFlags: 0
@@ -18511,6 +18776,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629489468497
 GameObject:
   m_ObjectHideFlags: 0
@@ -18684,6 +18954,11 @@ MonoBehaviour:
   solution: 270
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629554122172
 GameObject:
   m_ObjectHideFlags: 0
@@ -18779,6 +19054,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629556562221
 GameObject:
   m_ObjectHideFlags: 0
@@ -18950,6 +19230,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629561345175
 GameObject:
   m_ObjectHideFlags: 0
@@ -19250,6 +19535,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629635258194
 GameObject:
   m_ObjectHideFlags: 0
@@ -19345,6 +19635,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629678511655
 GameObject:
   m_ObjectHideFlags: 0
@@ -19898,6 +20193,11 @@ MonoBehaviour:
   solution: 90
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629846623957
 GameObject:
   m_ObjectHideFlags: 0
@@ -19993,6 +20293,11 @@ MonoBehaviour:
   solution: 0
   solved: 0
   limitRotations: 2
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629875829328
 GameObject:
   m_ObjectHideFlags: 0
@@ -20166,6 +20471,11 @@ MonoBehaviour:
   solution: 180
   solved: 0
   limitRotations: 4
+  audioSource: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
 --- !u!1 &598092629899623934
 GameObject:
   m_ObjectHideFlags: 0
@@ -20795,6 +21105,11 @@ MonoBehaviour:
   - {fileID: 598092628350020668}
   - {fileID: 3948088460250676237}
   textButton: {fileID: 3948088460580848527}
+  sounds:
+  - {fileID: 8300000, guid: 54d80dfe02f4db74893c81a20ae6c136, type: 3}
+  - {fileID: 8300000, guid: eeb0a0b87291be8499ccca528d418c4f, type: 3}
+  - {fileID: 8300000, guid: 45cbbc91985b6304cb8d5ac9b3e2a0b6, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &3948088458854348305
 GameObject:
   m_ObjectHideFlags: 0

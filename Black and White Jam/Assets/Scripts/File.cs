@@ -14,8 +14,11 @@ public class File : MonoBehaviour, IPointerDownHandler
     public Animator animator;
     [SerializeField]bool canMove;
     [SerializeField]TextMeshProUGUI text;
+    [SerializeField]AudioClip[] sounds;
+    [SerializeField]AudioSource audioSource;
     void Awake()
     {
+        audioSource = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<AudioSource>();
         StartCoroutine(moveit());
         if (isVirus)
         {
@@ -52,6 +55,8 @@ public class File : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        var randomSound = Random.Range(0, 3);
+        audioSource.PlayOneShot(sounds[randomSound], 0.7f);
         if (!crossHair.done)
         {
             if (isVirus)
