@@ -161,6 +161,82 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00011110306, y: -131.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &130967547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130967548}
+  - component: {fileID: 130967550}
+  - component: {fileID: 130967549}
+  m_Layer: 5
+  m_Name: Fish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &130967548
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130967547}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1149094890}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 38.6, y: 159.1}
+  m_SizeDelta: {x: 1188.6, y: 852.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &130967549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130967547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ca61c63d8c853cb41b264972f31e5848, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &130967550
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130967547}
+  m_CullTransparentMesh: 1
 --- !u!1 &136124472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1662,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967736901}
   m_CullTransparentMesh: 1
---- !u!1 &1051625657
+--- !u!1 &1050876114
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1594,46 +1670,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1051625658}
-  - component: {fileID: 1051625660}
-  - component: {fileID: 1051625659}
+  - component: {fileID: 1050876115}
+  - component: {fileID: 1050876117}
+  - component: {fileID: 1050876116}
   m_Layer: 5
-  m_Name: Fish
+  m_Name: Finux OS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1051625658
+--- !u!224 &1050876115
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051625657}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1050876114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1205251838}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 2100361356}
+  m_Father: {fileID: 1149094890}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.9, y: 53.9}
-  m_SizeDelta: {x: 1188.6, y: 1157.94}
+  m_AnchoredPosition: {x: 123.2, y: -224.2}
+  m_SizeDelta: {x: 652.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1051625659
+--- !u!114 &1050876116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051625657}
+  m_GameObject: {fileID: 1050876114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -1644,23 +1721,82 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80fdffb5d1049e040ae7dc445ac00db3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1051625660
+  m_text: Finux OS
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
+  m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 125.83
+  m_fontSizeBase: 125.83
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1050876117
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051625657}
+  m_GameObject: {fileID: 1050876114}
   m_CullTransparentMesh: 1
 --- !u!1 &1055736469
 GameObject:
@@ -1731,7 +1867,7 @@ Transform:
   m_Father: {fileID: 1971207921}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1205251837
+--- !u!1 &1149094889
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1739,9 +1875,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1205251838}
-  - component: {fileID: 1205251840}
-  - component: {fileID: 1205251839}
+  - component: {fileID: 1149094890}
+  - component: {fileID: 1149094892}
+  - component: {fileID: 1149094891}
   m_Layer: 5
   m_Name: WallPaper
   m_TagString: Untagged
@@ -1749,36 +1885,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1205251838
+--- !u!224 &1149094890
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205251837}
+  m_GameObject: {fileID: 1149094889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 836.08307}
-  m_LocalScale: {x: 0.009259259, y: 0.009259259, z: 0.009259259}
+  m_LocalScale: {x: 0.00926, y: 0.00926, z: 0.00926}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1051625658}
-  - {fileID: 1693890614}
-  - {fileID: 1489254562}
+  - {fileID: 130967548}
+  - {fileID: 1050876115}
+  - {fileID: 1825957048}
   m_Father: {fileID: 1971207921}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.46992874, y: 0.8935623}
-  m_SizeDelta: {x: 1921.5398, y: 1082.4128}
+  m_AnchoredPosition: {x: 0.48976517, y: -0.31279755}
+  m_SizeDelta: {x: 1921.5001, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1205251839
+--- !u!114 &1149094891
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205251837}
+  m_GameObject: {fileID: 1149094889}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1802,13 +1938,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1205251840
+--- !u!222 &1149094892
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205251837}
+  m_GameObject: {fileID: 1149094889}
   m_CullTransparentMesh: 1
 --- !u!1 &1243192324
 GameObject:
@@ -1888,141 +2024,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
---- !u!1 &1327473363
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1327473364}
-  - component: {fileID: 1327473366}
-  - component: {fileID: 1327473365}
-  m_Layer: 5
-  m_Name: TM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1327473364
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327473363}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1693890614}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 506.4, y: -0.000015258789}
-  m_SizeDelta: {x: 652.4, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1327473365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327473363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: TM
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
-  m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 37.3
-  m_fontSizeBase: 37.3
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1327473366
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327473363}
-  m_CullTransparentMesh: 1
 --- !u!1 &1344030679
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,141 +2674,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424545231}
   m_CullTransparentMesh: 1
---- !u!1 &1489254561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1489254562}
-  - component: {fileID: 1489254564}
-  - component: {fileID: 1489254563}
-  m_Layer: 5
-  m_Name: fish.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1489254562
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489254561}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1205251838}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 88.6, y: -342.1}
-  m_SizeDelta: {x: 652.4, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1489254563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489254561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Training, made easy.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
-  m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 64.3
-  m_fontSizeBase: 64.3
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1489254564
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489254561}
-  m_CullTransparentMesh: 1
 --- !u!1 &1560732274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3066,7 +2932,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 608051f1595372c41b7d02248cc14e9a, type: 3}
   - {fileID: 8300000, guid: 16df30b0a0e045340bcf5cd4b9be0906, type: 3}
   music: {fileID: 0}
-  katfin: {fileID: 0}
 --- !u!4 &1619334344
 Transform:
   m_ObjectHideFlags: 0
@@ -3094,7 +2959,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ac3a65507a7a5e4c902372677e8e6e2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.522
+  m_Volume: 0.493
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3295,142 +3160,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1693890613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1693890614}
-  - component: {fileID: 1693890616}
-  - component: {fileID: 1693890615}
-  m_Layer: 5
-  m_Name: Finux OS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1693890614
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693890613}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1327473364}
-  m_Father: {fileID: 1205251838}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84.4, y: -224.2}
-  m_SizeDelta: {x: 652.4, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1693890615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693890613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: InstructFin
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
-  m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 125.83
-  m_fontSizeBase: 125.83
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1693890616
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693890613}
-  m_CullTransparentMesh: 1
 --- !u!1 &1696182592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,6 +3509,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825108308}
   m_CullTransparentMesh: 1
+--- !u!1 &1825957047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1825957048}
+  - component: {fileID: 1825957050}
+  - component: {fileID: 1825957049}
+  m_Layer: 5
+  m_Name: fish.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1825957048
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825957047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1149094890}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 299.2, y: -342.1}
+  m_SizeDelta: {x: 652.4, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1825957049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825957047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: fish.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
+  m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 64.3
+  m_fontSizeBase: 64.3
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1825957050
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825957047}
+  m_CullTransparentMesh: 1
 --- !u!1 &1842674760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,7 +3969,7 @@ RectTransform:
   m_LocalScale: {x: 108, y: 108, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1205251838}
+  - {fileID: 1149094890}
   - {fileID: 136124473}
   - {fileID: 1651271648}
   - {fileID: 1148440125}
@@ -4119,6 +3983,141 @@ RectTransform:
   m_AnchoredPosition: {x: -53.644527, y: 33.78217}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2100361355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2100361356}
+  - component: {fileID: 2100361358}
+  - component: {fileID: 2100361357}
+  m_Layer: 5
+  m_Name: TM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2100361356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100361355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1050876115}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 430.3999, y: -0.000015258789}
+  m_SizeDelta: {x: 652.4, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2100361357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100361355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: TM
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
+  m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 37.3
+  m_fontSizeBase: 37.3
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2100361358
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100361355}
+  m_CullTransparentMesh: 1
 --- !u!1 &2105046620
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,8 +4317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.7, y: -4.1}
-  m_SizeDelta: {x: 382, y: 7.36}
+  m_AnchoredPosition: {x: -125.3, y: -4.1}
+  m_SizeDelta: {x: 411.6, y: 7.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559935492999554157
 MonoBehaviour:
@@ -4458,80 +4457,78 @@ MonoBehaviour:
   dragRectTransform: {fileID: 1618613161}
   currentMessage: 0
   tutorialDialogues:
-  - tutorialDialogue: '> KatF!sh: alright so uh'
+  - tutorialDialogue: '> KatF!sh: Oh hey'
+    timeBetweenNextDialogue: 3
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: How was the first day on the job?'
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: I got assigned to train you for your first day
-      on the job'
+  - tutorialDialogue: '> KatF!sh: oh.'
+    timeBetweenNextDialogue: 3
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: Well I hope you know you''re gonna have to do that
+      again'
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: It''s not that difficult honestly'
+  - tutorialDialogue: '> KatF!sh: FishCorp doesn''t really like leaving things unfinished'
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: You just gotta get used to the OS'
+  - tutorialDialogue: '> KatF!sh: I don''t even know how you failed anyway'
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> Instruction: Familiarize Yourself With the OS.'
-    timeBetweenNextDialogue: 8
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Oh wait'
+  - tutorialDialogue: '> KatF!sh: Most of those tasks can be completed in like 5
+      seconds'
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: You don''t even have a legit copy yet'
+  - tutorialDialogue: '> KatF!sh: Oh well'
+    timeBetweenNextDialogue: 3
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: Actually hold up'
+    timeBetweenNextDialogue: 3
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: I think I might be able to help you'
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Still using that old cracked version?'
-    timeBetweenNextDialogue: 4
+  - tutorialDialogue: '> KatF!sh: Here try this out'
+    timeBetweenNextDialogue: 3
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Here, I''ll send it to you'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> System: "fish.exe" Has Been Received From User: "KatF!sh"'
+  - tutorialDialogue: '> System: "KatF!n Tools v2.0" Has Been Received From User:
+      "KatF!sh'
     timeBetweenNextDialogue: 4
     breakTime: 0
     setNumberCall: 0
   - tutorialDialogue: '> System: Downloading...'
-    timeBetweenNextDialogue: 2
+    timeBetweenNextDialogue: 3
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading. (10%)'
+  - tutorialDialogue: '> System: Downloading. (15%)'
     timeBetweenNextDialogue: 1
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading.. (20%)'
+  - tutorialDialogue: '> System: Downloading.. (30%)'
     timeBetweenNextDialogue: 1
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading... (30%)'
+  - tutorialDialogue: '> System: Downloading... (45%)'
     timeBetweenNextDialogue: 1
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading. (40%)'
+  - tutorialDialogue: '> System: Downloading. (60%)'
     timeBetweenNextDialogue: 1
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading.. (50%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading... (60%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading. (70%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> System: Downloading.. (80%)'
+  - tutorialDialogue: '> System: Downloading.. (75%)'
     timeBetweenNextDialogue: 1
     breakTime: 0
     setNumberCall: 0
@@ -4551,220 +4548,14 @@ MonoBehaviour:
     timeBetweenNextDialogue: 1
     breakTime: 0
     setNumberCall: 0
-  - tutorialDialogue: '> System: "fish.exe" Installed!'
-    timeBetweenNextDialogue: 0
+  - tutorialDialogue: '> System: "KatF!n Tools v2.0" Installed!'
+    timeBetweenNextDialogue: 4
+    breakTime: 0
+    setNumberCall: 0
+  - tutorialDialogue: '> KatF!sh: I''m sure that''ll help you out.'
+    timeBetweenNextDialogue: 4
     breakTime: 1
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Alright there we go'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Your objective is to complete your TASKS'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: You''ll have to complete all of them before the
-      day ends'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: You can find your tasks in your NOTEPAD'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: What are the TASKS?'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Well they''re all different'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Let''s start with a basic one'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> Instruction: Open "Tutorial.exe" by Double-Clicking its
-      Icon.'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 1
-  - tutorialDialogue: '> KatF!sh: Ok good'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 1
-  - tutorialDialogue: '> KatF!sh: You can "focus" and move the window by clicking
-      it at the top'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Now complete the task'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 1
-  - tutorialDialogue: '> Instruction: Click the Circles'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 2
-  - tutorialDialogue: '> KatF!sh: You seem to be getting the hang of it '
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> Instruction: Close the Window by Clicking the X Button on
-      the Top Right.'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 5
-  - tutorialDialogue: '> KatF!sh: All of your TASKS will be pretty straight forward,
-      so make sure to read and follow the instructions'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> KatF!sh: Alright, try this last one'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: "tutorialEnd.exe" Has Been Received from User "KatF!sh"'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading...'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading. (25%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading.. (50%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading... (75%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading. (99%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading.. (99.9%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading... (99.99%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading. (99.999%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading.. (99.9999%)'
-    timeBetweenNextDialogue: 1
-    breakTime: 0
-    setNumberCall: 2
-  - tutorialDialogue: '> System: Downloading... (99.99999%)'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 3
-  - tutorialDialogue: '> Instruction: Open "tutorialEnd.exe"'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 7
-  - tutorialDialogue: '> KatF!sh: What?'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: It''s locked?'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: The password has got to be here somewhere...'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 6
-  - tutorialDialogue: '> Instruction: Complete the Tutorial'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 4
-  - tutorialDialogue: '> KatF!sh: Ah that''s where it went'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Good eye'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: I''m sure you''ll do fine on the job'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Before you go, there''s another thing i need to
-      mention'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 9
-  - tutorialDialogue: '> KatF!sh: By clicking and dragging on the top of a window,
-      you can move it around'
-    timeBetweenNextDialogue: 5
-    breakTime: 0
-    setNumberCall: 9
-  - tutorialDialogue: '> KatF!sh: This is good for like multi-tasking and stuff'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 9
-  - tutorialDialogue: '> KatF!sh: Oh and that brings me to another thing'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 9
-  - tutorialDialogue: '> KatF!sh: The start menu'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 10
-  - tutorialDialogue: '> Instruction: Open the Start Menu'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 10
-  - tutorialDialogue: '> KatF!sh: Here you can do all sorts of things'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 9
-  - tutorialDialogue: '> KatF!sh: Like close all of your tabs for example'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 9
-  - tutorialDialogue: '> KatF!sh: Well anyway, you should get going'
-    timeBetweenNextDialogue: 4
-    breakTime: 0
-    setNumberCall: 9
-  - tutorialDialogue: '> KatF!sh: Click that button when you''re ready to continue'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 8
-  - tutorialDialogue: '> KatF!sh: I said to click that button when you''re ready
-      to continue'
-    timeBetweenNextDialogue: 10
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Bro come on we don''t have all day'
-    timeBetweenNextDialogue: 10
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: You know i have to sit here until you click that
-      button right?'
-    timeBetweenNextDialogue: 10
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: Bro HURRY UP'
-    timeBetweenNextDialogue: 10
-    breakTime: 0
-    setNumberCall: 0
-  - tutorialDialogue: '> KatF!sh: You know what, i''ll just press the button for
-      you'
-    timeBetweenNextDialogue: 0
-    breakTime: 1
-    setNumberCall: 9
+    setNumberCall: 11
   currentDialogue: 0
   tutorial: 1
   tutorialObjects:
@@ -5298,7 +5089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click the Circles
+  m_text: Circle the Circles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
   m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}

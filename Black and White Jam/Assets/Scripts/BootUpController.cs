@@ -9,6 +9,7 @@ public class BootUpController : MonoBehaviour
     public GameObject[] bootUpObjects;
     public AudioClip[] audioClips;
     public AudioSource audioSource;
+    public int sceneNum;
    void Awake()
    {
        StartCoroutine(bootUp());
@@ -122,7 +123,7 @@ public class BootUpController : MonoBehaviour
        audioSource.Play();
        bootUpObjects[19].SetActive(true);
        yield return new WaitForSeconds(6f);
-       SceneManager.LoadScene(2);
+       SceneManager.LoadScene(sceneNum);
        
        
    }

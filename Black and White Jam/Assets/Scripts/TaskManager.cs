@@ -58,13 +58,13 @@ public class TaskManager : MonoBehaviour
     public AudioClip[] sounds;
     public AudioSource music;
     bool warning;
+    public KatFinTools katfin;
 
 
    Vector3 originalPos;
 
    void Awake()
    {
-       Application.targetFrameRate = 60;
        timeBetweenRage = 1;
        rageShake = 2;
        lose = false;
@@ -112,6 +112,7 @@ public class TaskManager : MonoBehaviour
        {
            everything[i].SetActive(true);
        }
+       katfin.enabled = true;
    }
 
    public void EndGame()

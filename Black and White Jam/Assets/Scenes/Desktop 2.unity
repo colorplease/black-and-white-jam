@@ -11488,8 +11488,8 @@ MonoBehaviour:
   - {fileID: 1148440124}
   loss: {fileID: 2878420378389023885, guid: 7ca7435f955e1c14ba6a8c6fc9090094, type: 3}
   winObject: {fileID: 1739997936207067293, guid: 2ae3660fd19077d4caecb51b23798364, type: 3}
-  loopNumber: 0
-  SceneNumber: 3
+  loopNumber: 2
+  SceneNumber: 6
   audioSource: {fileID: 1619334345}
   sounds:
   - {fileID: 8300000, guid: f1f8158bf3a70664d8dfb30664d74dab, type: 3}
@@ -11624,7 +11624,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7b7c863573201e24183df6dd8648438a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.312
+  m_Volume: 0.442
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11720,10 +11720,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266c9c6546ca66d4e8634b05cbcd0eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowSec: 9999999
-  highSec: 9999999
+  lowSec: 6
+  highSec: 9
   adSelection:
+  - {fileID: 4615068864589275141, guid: fc15a8b509adfdb43ab7838273b00eed, type: 3}
   - {fileID: 7812529622542239604, guid: ade18561a7f3aae4c95e7a84b32744b7, type: 3}
+  - {fileID: 7018150371755689856, guid: 07ed438c1274b2e41a15b2664f1945a8, type: 3}
+  - {fileID: 9166540866606960144, guid: ec2378c47276e174995fd4f58fe005fa, type: 3}
   taskManager: {fileID: 0}
   fishManager: {fileID: 0}
   shakeaShakea: {fileID: 0}
@@ -15325,7 +15328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   waitTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: 2005686210}
 --- !u!1 &2036594270
 GameObject:
   m_ObjectHideFlags: 0

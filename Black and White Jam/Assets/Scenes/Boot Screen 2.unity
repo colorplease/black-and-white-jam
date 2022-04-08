@@ -2689,7 +2689,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 06acea6780cdb114f9578d39f35adebd, type: 3}
   - {fileID: 8300000, guid: 731fed92e6ea8d445a1bea449fcd6a09, type: 3}
   audioSource: {fileID: 1315054242}
-  sceneNum: 2
+  sceneNum: 5
 --- !u!4 &1315054244
 Transform:
   m_ObjectHideFlags: 0

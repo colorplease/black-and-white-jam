@@ -176,6 +176,14 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             callNumber = setNumber;
             break;
 
+            case 11:
+            SceneManager.LoadScene(4);
+            break;
+
+            case 12:
+            SceneManager.LoadScene(9);
+            break;
+
 
 
         }

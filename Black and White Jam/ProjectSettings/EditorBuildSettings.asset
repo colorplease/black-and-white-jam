@@ -14,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desktop.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ChatRoom 1.unity
+    guid: 9de5698a53d9a1242989cf22d311eeab
+  - enabled: 1
+    path: Assets/Scenes/Boot Screen 2.unity
+    guid: 6a24ea09db328af4ba461403af3107b6
+  - enabled: 1
+    path: Assets/Scenes/Desktop 2.unity
+    guid: a928917b493b5814092339f6c7f83f15
+  - enabled: 1
+    path: Assets/Scenes/Boot Screen 3.unity
+    guid: 24515b5f12f81314ca7d6d2823a3c222
+  - enabled: 1
+    path: Assets/Scenes/Desktop 3.unity
+    guid: ea209cee9e4928d4e94648fd14007ffc
+  - enabled: 1
+    path: Assets/Scenes/ChatRoom 2.unity
+    guid: 25bb0346367bf4d4093ea68e0f41018a
   m_configObjects: {}
