@@ -25,6 +25,7 @@ TagManager:
   - dump
   - recycle
   - wire
+  - start menu
   layers:
   - Default
   - TransparentFX

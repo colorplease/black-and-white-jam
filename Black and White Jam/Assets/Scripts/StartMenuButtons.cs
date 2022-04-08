@@ -47,10 +47,5 @@ public class StartMenuButtons : MonoBehaviour, IDeselectHandler
         }
 
     }
-
-    public void ResetPC()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
     
 }

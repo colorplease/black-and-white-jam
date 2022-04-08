@@ -39,6 +39,7 @@ public class TaskManager : MonoBehaviour
    bool secondTimeAround;
    public GameObject[] everything;
    public GameObject loss;
+   public GameObject winObject;
    public int loopNumber;
    FISHManager fishManager;
    bool win;
@@ -46,12 +47,21 @@ public class TaskManager : MonoBehaviour
    bool lose;
    bool lost;
    public int SceneNumber;
+   int rageNumber;
+   float timeBetweenRage;
+   float rageShake;
+   GameObject[] windows;
+    Window[] windowScripts;
+    GameObject[] noMinimizeWindows;
+    NoMinimizeWindow[] noMinimizeWindowsScripts;
 
 
    Vector3 originalPos;
 
    void Awake()
    {
+       timeBetweenRage = 1;
+       rageShake = 2;
        lose = false;
        timeSpeed = 0;
        shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
@@ -100,12 +110,26 @@ public class TaskManager : MonoBehaviour
 
    public void EndGame()
    {
-       timeSpeed = 0.2f;
+       timeSpeed = 0f;
        for (int i = 0; i < everything.Length; i++)
        {
            everything[i].SetActive(false);
        }
        Mistake(0);
+       windows = GameObject.FindGameObjectsWithTag("Window");
+        windowScripts = new Window[windows.Length];
+        for (int i = 0; i < windows.Length; i++)
+        {
+            windowScripts[i] = windows[i].GetComponent<Window>();
+            windowScripts[i].Close();
+        }
+        noMinimizeWindows = GameObject.FindGameObjectsWithTag("NoMiniWindow");
+        noMinimizeWindowsScripts = new NoMinimizeWindow[noMinimizeWindows.Length];
+        for (int i = 0; i < noMinimizeWindows.Length; i++)
+        {
+            noMinimizeWindowsScripts[i] = noMinimizeWindows[i].GetComponent<NoMinimizeWindow>();
+            noMinimizeWindowsScripts[i].Close();
+        }
    }
 
    public void NextLoop()
@@ -173,6 +197,10 @@ public class TaskManager : MonoBehaviour
         MistakeHappening();  
         Clock();
         CompletionCheck();
+        if (win)
+        {
+            ShakeUltra();
+        }
    }
 
    void CompletionCheck()
@@ -180,6 +208,8 @@ public class TaskManager : MonoBehaviour
        if (numberOfTasksCompleted == 6 && win == false && loopNumber > 3 && lose == false)
        {
            win = true;
+           StartCoroutine(winScene());
+           EndGame();
        }
        else if (numberOfTasksCompleted == 5 && fast == false && loopNumber < 3 && clockActive == false)
        {
@@ -193,12 +223,66 @@ public class TaskManager : MonoBehaviour
            PlayerPrefs.SetInt("Losses", PlayerPrefs.GetInt("Losses") + 1);
            PlayerPrefs.SetInt("Loops", PlayerPrefs.GetInt("Loops") + 1);  
            EndGame();
-           GameObject window = Instantiate(loss, new Vector3(UnityEngine.Random.Range(-100, 100) / shakeaShakea.localScale.x, UnityEngine.Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
+            GameObject window = Instantiate(loss, new Vector3(UnityEngine.Random.Range(-100, 100) / shakeaShakea.localScale.x, UnityEngine.Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
             window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
             window.transform.SetParent(shakeaShakea);
             lose = false;
             lost = true;
        }
+   }
+
+   IEnumerator winScene()
+   {
+       fishManager.SendMessageToChat("> KatF!sh: WAIT");
+       yield return new WaitForSeconds(2);
+       fishManager.SendMessageToChat("> KatF!sh: WHAT");
+       yield return new WaitForSeconds(2);
+       fishManager.SendMessageToChat("> KatF!sh: HOW DID YOU-");
+       yield return new WaitForSeconds(2);
+       fishManager.SendMessageToChat("> KatF!sh: NO");
+       yield return new WaitForSeconds(2);
+       fishManager.SendMessageToChat("> KatF!sh: I MADE SURE YOU WOULDN'T BE ABLE TO");
+       yield return new WaitForSeconds(2);
+       fishManager.SendMessageToChat("> KatF!sh: NO"); 
+       StartCoroutine(pain());  
+   }
+
+   IEnumerator pain()
+   {
+       if (rageNumber < 15)
+       {
+        shakeDuration = 0.25f;
+       fishManager.SendMessageToChat("> KatF!sh: NO");
+        GameObject window = Instantiate(winObject, new Vector3(UnityEngine.Random.Range(-100, 100) / shakeaShakea.localScale.x, UnityEngine.Random.Range(-87, 155), 0)/shakeaShakea.localScale.y, transform.rotation);
+        window.transform.localScale = new Vector3(window.transform.localScale.x / shakeaShakea.localScale.x, window.transform.localScale.y / shakeaShakea.localScale.y, 1f);
+        window.transform.SetParent(shakeaShakea);
+        rageNumber++;
+        timeBetweenRage -= 0.05f;
+        rageShake += 0.5f;
+        yield return new WaitForSeconds(timeBetweenRage);
+        StartCoroutine(pain()); 
+       }
+       else
+       {
+           Debug.Log("hey");
+       }
+
+   }
+
+
+   void ShakeUltra()
+   {
+           if (shakeDuration > 0)
+           {
+               shakeaShakea.localPosition = originalPos + UnityEngine.Random.insideUnitSphere * shakeAmount * rageShake;
+
+               shakeDuration -= Time.deltaTime * decreaseFactor;
+           }
+           else
+           {
+               shakeDuration = 0f;
+               shakeaShakea.localPosition = originalPos;
+           }
    }
 
    void Clock()
@@ -247,6 +331,7 @@ public class TaskManager : MonoBehaviour
 
    public void Mistake(float timeLost)
    {
+       PlayerPrefs.SetInt("Mistakes", PlayerPrefs.GetInt("Mistakes") + 1);
        originalPos = shakeaShakea.localPosition;
        shakeDuration = 0.25f;
        isMistake = true;

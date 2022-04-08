@@ -165,7 +165,12 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             case 9:
             SceneManager.LoadScene(1);
             break;
-            
+
+            case 10:
+            currentDialogue++;
+            updateCall = true;
+            callNumber = setNumber;
+            break;
 
 
 
@@ -222,6 +227,14 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
 
                 case 7: 
                 if (GameObject.FindGameObjectWithTag("NoMiniWindow") != null)
+                    {
+                        StartCoroutine(Set());
+                        updateCall = false;
+                    }
+                break;
+
+                case 10:
+                if (GameObject.FindGameObjectWithTag("start menu") != null)
                     {
                         StartCoroutine(Set());
                         updateCall = false;
