@@ -105,7 +105,6 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             tutorialObjects[0].SetActive(true);
             tutorialObjects[1].SetActive(true);
             tutorialObjects[2].SetActive(true);
-            taskManager.UpdateToDoList();
             StartCoroutine(Set());
             break;
 

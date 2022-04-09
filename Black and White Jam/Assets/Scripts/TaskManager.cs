@@ -19,7 +19,6 @@ public class TaskManager : MonoBehaviour
    public RectTransform[] shortcuts;
    [SerializeField] Transform notePad;
    GameObject[] shortcutsGameObjects;
-   GameObject[] crossOutsGameObjects;
    public GameObject ToDo;
    public GameObject ToDoShortcut;
    public Image[] crossOuts;
@@ -71,17 +70,7 @@ public class TaskManager : MonoBehaviour
        lose = false;
        timeSpeed = 0;
        shakeaShakea = GameObject.FindGameObjectWithTag ("ShakeaShakea").GetComponent<RectTransform>();
-       crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
        fishManager = GameObject.FindGameObjectWithTag("FISH").GetComponent<FISHManager>();
-       crossOuts = new Image[crossOutsGameObjects.Length];
-       for (int i = 0; i < crossOutsGameObjects.Length; i++)
-       {
-           crossOuts[i] = crossOutsGameObjects[i].GetComponent<Image>();
-           var tempColor = crossOuts[i].color;
-           tempColor.a = 0f;
-           crossOuts[i].color = tempColor;
-       }
-
        if (!fishManager.tutorial)
        {
            for (int i = 0; i < everything.Length; i++)
@@ -89,20 +78,13 @@ public class TaskManager : MonoBehaviour
            everything[i].SetActive(false);
             }
        }
-       
-   }
-
-   public void UpdateToDoList()
-   {
-        crossOutsGameObjects = GameObject.FindGameObjectsWithTag("CrossOut");
-       crossOuts = new Image[crossOutsGameObjects.Length];
-       for (int i = 0; i < crossOutsGameObjects.Length; i++)
+       for (int i = 0; i < crossOuts.Length; i++)
        {
-           crossOuts[i] = crossOutsGameObjects[i].GetComponent<Image>();
            var tempColor = crossOuts[i].color;
            tempColor.a = 0f;
            crossOuts[i].color = tempColor;
        }
+       
    }
 
    public void StartGame()
@@ -122,6 +104,7 @@ public class TaskManager : MonoBehaviour
        katfin.StopAllCoroutines();
        music.Stop();
        audioSource.PlayOneShot(sounds[6]);
+       audioSource.PlayOneShot(sounds[8]);
        timeSpeed = 0f;
        for (int i = 0; i < everything.Length; i++)
        {
@@ -285,7 +268,7 @@ public class TaskManager : MonoBehaviour
        {
            audioSource.PlayOneShot(sounds[7]);
            yield return new WaitForSeconds(2);
-           SceneManager.LoadScene(SceneNumber + 2);
+           SceneManager.LoadScene(11);
        }
 
    }

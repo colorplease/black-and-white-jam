@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desktop 4.unity
     guid: f3d40fb57a226174281b15f0db96891f
+  - enabled: 1
+    path: Assets/Scenes/Finale.unity
+    guid: 24508b8b5e6e1fb41a09460be0ac80ef
   m_configObjects: {}

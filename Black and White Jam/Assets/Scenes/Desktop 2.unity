@@ -5238,6 +5238,7 @@ MonoBehaviour:
   - {fileID: 2121857556}
   taskManager: {fileID: 0}
   fishManager: {fileID: 0}
+  roomNumber: 0
 --- !u!1 &777421939
 GameObject:
   m_ObjectHideFlags: 0
@@ -11465,7 +11466,14 @@ MonoBehaviour:
   notePad: {fileID: 1380983599}
   ToDo: {fileID: 3189367289175038937, guid: 420d629463ba7854dbd3d7873b0ee6ad, type: 3}
   ToDoShortcut: {fileID: 8857332717664159660, guid: dfcd57c14c4149b45a39e018438ec76e, type: 3}
-  crossOuts: []
+  crossOuts:
+  - {fileID: 1559935492999554157}
+  - {fileID: 5166868183605906004}
+  - {fileID: 7087031333758922565}
+  - {fileID: 5499241102867253152}
+  - {fileID: 5428417874269276795}
+  - {fileID: 2403474683772355638}
+  - {fileID: 8767831411195443346}
   currentShortcutInt: 0
   shakeaShakea: {fileID: 0}
   shakeDuration: 0
@@ -11500,6 +11508,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 16df30b0a0e045340bcf5cd4b9be0906, type: 3}
   - {fileID: 8300000, guid: 47f09332d7d5e4a439aac12016c3d071, type: 3}
   - {fileID: 8300000, guid: 3b037727a9d2f7044838a2820763eb65, type: 3}
+  - {fileID: 8300000, guid: 2168974eed362444ea4b3d84bac859d1, type: 3}
   music: {fileID: 1619334346}
   katfin: {fileID: 1619334347}
 --- !u!4 &1619334344

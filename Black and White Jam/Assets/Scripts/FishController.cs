@@ -111,7 +111,7 @@ public class FishController : MonoBehaviour
              camera.localPosition = new Vector3 (0.2f, camera.localPosition.y, camera.localPosition.z);
             transform.localPosition = new Vector3(-49.16f, 45.2f, transform.localPosition.z);
             taskManager.Mistake(30);
-            fishManager.SendMessageToChat("hit by (fish?) car [-30m]");
+            fishManager.SendMessageToChat("> hit by (fish?) car [-30m]");
 
         }
 
