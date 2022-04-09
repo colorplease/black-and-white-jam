@@ -294,8 +294,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "oh wow i didn't expect you to actually click on this. \n\nnice.\n\nHere's
-    what you need to do:\n1. Memos>Random Memos>FISH\n\n2. fish \n\nYou'll need these
-    2 open together.\ngood luck lol.\n\n\n\n"
+    what you need to do:\n1. Memos>Random Memos>FISH\n\n2. fish (folder)\n\nYou'll
+    need these 2 to find complete the task.\ngood luck lol.\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
   m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}

@@ -65,6 +65,7 @@ public class TaskManager : MonoBehaviour
 
    void Awake()
    {
+       fast = false;
        timeBetweenRage = 1;
        rageShake = 2;
        lose = false;
@@ -226,11 +227,12 @@ public class TaskManager : MonoBehaviour
            StartCoroutine(winScene());
            EndGame();
        }
-       else if (numberOfTasksCompleted >= 5 && fast == false && loopNumber < 3)
+       if (numberOfTasksCompleted >= 5 && fast == false && loopNumber < 3)
        {
-           Mistake(155);
+           Mistake(200);
            fishManager.SendMessageToChat("> KatF!sh: TO FAST, TOO SOON [-155m]");
            fast = true;
+           Debug.Log("sus");
        }
 
        if (lose && !lost)

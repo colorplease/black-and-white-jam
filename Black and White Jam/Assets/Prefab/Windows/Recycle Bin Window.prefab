@@ -651,7 +651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Empty the Recycle Bin (Arrow Keys)
+  m_text: Empty the Recycle Bin (WASD)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
   m_sharedMaterial: {fileID: 7479276624506480755, guid: 25d5e33412fafb74db61562471fefba5, type: 2}
