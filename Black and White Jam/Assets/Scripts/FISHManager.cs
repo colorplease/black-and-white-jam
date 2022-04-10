@@ -166,7 +166,7 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             break;
 
             case 9:
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
             break;
 
             case 10:
@@ -176,11 +176,11 @@ public class FISHManager : MonoBehaviour, IPointerDownHandler
             break;
 
             case 11:
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
             break;
 
             case 12:
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(10);
             break;
 
 

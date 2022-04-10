@@ -271,7 +271,7 @@ public class TaskManager : MonoBehaviour
        {
            audioSource.PlayOneShot(sounds[7]);
            yield return new WaitForSeconds(2);
-           SceneManager.LoadScene(11);
+           SceneManager.LoadScene(12);
        }
 
    }

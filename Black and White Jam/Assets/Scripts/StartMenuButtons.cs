@@ -47,5 +47,10 @@ public class StartMenuButtons : MonoBehaviour, IDeselectHandler
         }
 
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
     
 }
