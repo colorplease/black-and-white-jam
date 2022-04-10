@@ -104,7 +104,10 @@ public class TaskManager : MonoBehaviour
        katfin.StopAllCoroutines();
        music.Stop();
        audioSource.PlayOneShot(sounds[6]);
-       audioSource.PlayOneShot(sounds[8]);
+       if (!win)
+       {
+           audioSource.PlayOneShot(sounds[8]);
+       }
        timeSpeed = 0f;
        for (int i = 0; i < everything.Length; i++)
        {
