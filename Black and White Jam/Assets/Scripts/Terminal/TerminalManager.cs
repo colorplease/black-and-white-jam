@@ -54,7 +54,7 @@ public class TerminalManager : MonoBehaviour
     {
         //Resizing command line
         Vector2 msgListSize = msgList.GetComponent<RectTransform>().sizeDelta;
-        msgList.GetComponent<RectTransform>().sizeDelta = new Vector2(msgListSize.x, msgListSize.y + 45f);
+        msgList.GetComponent<RectTransform>().sizeDelta = new Vector2(msgListSize.x, msgListSize.y + 20f);
 
         GameObject msg = Instantiate(directoryLine, msgList.transform);
 
@@ -71,7 +71,7 @@ public class TerminalManager : MonoBehaviour
 
             Vector2 listSize = msgList.GetComponent<RectTransform>().sizeDelta;
 
-            msgList.GetComponent<RectTransform>().sizeDelta = new Vector2(listSize.x, listSize.y + 45f);
+            msgList.GetComponent<RectTransform>().sizeDelta = new Vector2(listSize.x, listSize.y + 20f);
 
             res.GetComponentsInChildren<TMP_Text>()[1].text = interpretation[i];
         }
@@ -81,5 +81,6 @@ public class TerminalManager : MonoBehaviour
     {
         if (userInputLine.GetComponent<RectTransform>().position.y < msgList.GetComponent<RectTransform>().sizeDelta.y)
             scrollRect.verticalNormalizedPosition = 0;
+            //scrollRect.velocity = new Vector2(0, 450f);
     }
 }
