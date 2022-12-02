@@ -9,39 +9,39 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: 56b5ed61c9382f24287937889cc5c573
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
+    path: Assets/Scenes/Legacy/Tutorial.unity
     guid: 514f9df2bfd271440b8c21f09a4b8f4e
   - enabled: 1
-    path: Assets/Scenes/Boot Screen.unity
+    path: Assets/Scenes/Legacy/Boot Screen.unity
     guid: cd73cad40d86d2742b83cb51dbed8e57
   - enabled: 1
-    path: Assets/Scenes/Desktop.unity
+    path: Assets/Scenes/Legacy/Desktop.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/ChatRoom 1.unity
+    path: Assets/Scenes/Legacy/ChatRoom 1.unity
     guid: 9de5698a53d9a1242989cf22d311eeab
   - enabled: 1
-    path: Assets/Scenes/Boot Screen 2.unity
+    path: Assets/Scenes/Legacy/Boot Screen 2.unity
     guid: 6a24ea09db328af4ba461403af3107b6
   - enabled: 1
-    path: Assets/Scenes/Desktop 2.unity
+    path: Assets/Scenes/Legacy/Desktop 2.unity
     guid: a928917b493b5814092339f6c7f83f15
   - enabled: 1
-    path: Assets/Scenes/Boot Screen 3.unity
+    path: Assets/Scenes/Legacy/Boot Screen 3.unity
     guid: 24515b5f12f81314ca7d6d2823a3c222
   - enabled: 1
-    path: Assets/Scenes/Desktop 3.unity
+    path: Assets/Scenes/Legacy/Desktop 3.unity
     guid: ea209cee9e4928d4e94648fd14007ffc
   - enabled: 1
-    path: Assets/Scenes/ChatRoom 2.unity
+    path: Assets/Scenes/Legacy/ChatRoom 2.unity
     guid: 25bb0346367bf4d4093ea68e0f41018a
   - enabled: 1
-    path: Assets/Scenes/Boot Screen 4.unity
+    path: Assets/Scenes/Legacy/Boot Screen 4.unity
     guid: f7ed71b91c09d354a833ae4e8d6be442
   - enabled: 1
-    path: Assets/Scenes/Desktop 4.unity
+    path: Assets/Scenes/Legacy/Desktop 4.unity
     guid: f3d40fb57a226174281b15f0db96891f
   - enabled: 1
-    path: Assets/Scenes/Finale.unity
+    path: Assets/Scenes/Legacy/Finale.unity
     guid: 24508b8b5e6e1fb41a09460be0ac80ef
   m_configObjects: {}
