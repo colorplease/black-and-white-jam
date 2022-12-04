@@ -26,6 +26,7 @@ TagManager:
   - recycle
   - wire
   - start menu
+  - key
   layers:
   - Default
   - TransparentFX
