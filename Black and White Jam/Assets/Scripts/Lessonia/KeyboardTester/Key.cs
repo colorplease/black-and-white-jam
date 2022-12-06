@@ -15,7 +15,7 @@ public class Key : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string st = "QWERTYUIOPASDFGHJKLZXCVBNM";
+        string st = "QWERTYUIOPASDFGHJKLZXCVBNM123456789";
         letterID = st[Random.Range(0,st.Length)].ToString();
         letter.SetText(letterID);
     }
