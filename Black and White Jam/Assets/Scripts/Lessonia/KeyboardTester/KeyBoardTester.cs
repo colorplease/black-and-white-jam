@@ -12,26 +12,23 @@ public class KeyBoardTester : MonoBehaviour
     bool pressed;
     KeyCode inputCurrent;
     [SerializeField]WindowDragRedux isFocused;
-    [SerializeField]int numberOfKeys;
     [SerializeField]float keySize;
+    [SerializeField]float keySizeMultiplier;
     [SerializeField]GridLayoutGroup organizerLayout;
     [SerializeField]GameObject key;
-    // Start is called before the first frame update
-    void Start()
-    {
-        keys = GetComponentsInChildren<Key>();
-    }
+    [SerializeField]FishManagerRedux fishManager;
 
     void OnEnable()
     {
-            numberOfKeys += 2 * PlayerPrefs.GetInt("Difficulty");
-            keySize = 0.8f * PlayerPrefs.GetInt("Difficulty");
-            organizerLayout.cellSize = new Vector2(organizerLayout.cellSize.x - keySize, organizerLayout.cellSize.y - keySize);
-        for(int i=0; i < numberOfKeys; i++)
+        fishManager = GameObject.FindWithTag("TaskManager").GetComponent<FishManagerRedux>();
+        keySize = keySizeMultiplier * fishManager.numberOfKeys;
+        organizerLayout.cellSize = new Vector2(organizerLayout.cellSize.x - keySize, organizerLayout.cellSize.y - keySize);
+        for(int i=0; i < fishManager.numberOfKeys; i++)
             {
                 GameObject currentKey = Instantiate(key, Vector2.zero, Quaternion.identity, organizer);
                 currentKey.GetComponentInChildren<TextMeshProUGUI>().fontSize -= keySize * 0.6f;
             }
+        keys = GetComponentsInChildren<Key>();
     }
 
     // Update is called once per frame

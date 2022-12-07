@@ -1,22 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FishManagerRedux : MonoBehaviour
 {
+    [Header("Important")]
     public int difficulty;
-    // Start is called before the first frame update
-    void Start()
+    public float KP;
+
+    [Header("Random")]
+    [SerializeField]TextMeshProUGUI KPText;
+
+    [Header("Keyboard Tester")]
+    public int numberOfKeys;
+
+
+    void Awake()
     {
-        PlayerPrefs.SetInt("Difficulty", difficulty);
-        print(PlayerPrefs.GetInt("Difficulty"));
+        UpdateKP(0);
+    }
+
+    void OnEnable()
+    {
+        numberOfKeys += 2 * difficulty;
+    }
+    void UpdateKP(float newKP)
+    {
+        KP = newKP;
+        KPText.SetText(KP.ToString());
     }
 
     void IncreaseDifficulty()
     {
         difficulty++;
-        PlayerPrefs.SetInt("Difficulty", difficulty);
-        print(PlayerPrefs.GetInt("Difficulty"));    
     }
 
     // Update is called once per frame
@@ -25,6 +42,10 @@ public class FishManagerRedux : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             IncreaseDifficulty();
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UpdateKP(KP + 5);
         }
     }
 }
