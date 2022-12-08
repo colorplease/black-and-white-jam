@@ -10,6 +10,7 @@ public class KeyBoardTester : MonoBehaviour
     [SerializeField]Transform organizer;
     [SerializeField]string currentInput;
     bool pressed;
+    bool completed;
     KeyCode inputCurrent;
     [SerializeField]WindowDragRedux isFocused;
     [SerializeField]float keySize;
@@ -17,6 +18,8 @@ public class KeyBoardTester : MonoBehaviour
     [SerializeField]GridLayoutGroup organizerLayout;
     [SerializeField]GameObject key;
     [SerializeField]FishManagerRedux fishManager;
+    [SerializeField]GameObject winner;
+    [SerializeField]GameObject mainBody;
 
     void OnEnable()
     {
@@ -34,25 +37,38 @@ public class KeyBoardTester : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (keys.Length == 0)
+        {
+            if(!completed)
+            {
+                winner.SetActive(true);
+                fishManager.TaskComplete();
+                Destroy(mainBody, 3f);
+                completed = true;
+            }
+        }
         if (isFocused.IsLastSibling())
         {
-            GetNewKey();
-            if (Input.anyKeyDown && !(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
+            if (!completed)
             {
-                if(Input.GetKeyDown(inputCurrent))
+                GetNewKey();
+                if (Input.anyKeyDown && !(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
                 {
-                    keys[0].Pressed();
-                    pressed = true;
+                    if(Input.GetKeyDown(inputCurrent))
+                    {
+                        keys[0].Pressed();
+                        pressed = true;
+                    }
+                    else
+                    {
+                        Debug.Log("L");
+                    }
                 }
-            else
+                if(Input.GetKeyUp(inputCurrent) && pressed)
                 {
-                    Debug.Log("L");
+                    keys[0].Release();
+                    pressed = false;
                 }
-            }
-            if(Input.GetKeyUp(inputCurrent) && pressed)
-            {
-                keys[0].Release();
-                pressed = false;
             }
         }
     }

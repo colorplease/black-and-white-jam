@@ -10,10 +10,14 @@ public class WindowDragRedux : MonoBehaviour, IDragHandler, IPointerDownHandler
     [SerializeField]RectTransform shakea;
     //a square that turns red if the window is selected, turns blue if not
     [SerializeField]Image debugImage;
+    public bool isDraggable;
     public void OnDrag(PointerEventData eventData)
     {
-        //Moves window, divided by shakea object or else it goes apeshit crazy
-        dragRectTransform.anchoredPosition += eventData.delta / shakea.localScale.x;
+        if (isDraggable)
+        {
+            //Moves window, divided by shakea object or else it goes apeshit crazy
+            dragRectTransform.anchoredPosition += eventData.delta / shakea.localScale.x;
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
