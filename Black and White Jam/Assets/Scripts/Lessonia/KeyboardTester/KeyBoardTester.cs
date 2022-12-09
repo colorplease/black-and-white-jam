@@ -61,7 +61,7 @@ public class KeyBoardTester : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("L");
+                        fishManager.Mistake(0.25f);
                     }
                 }
                 if(Input.GetKeyUp(inputCurrent) && pressed)

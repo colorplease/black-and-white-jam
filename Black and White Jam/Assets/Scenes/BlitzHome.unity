@@ -1713,6 +1713,7 @@ GameObject:
   - component: {fileID: 828282357}
   - component: {fileID: 828282356}
   - component: {fileID: 828282358}
+  - component: {fileID: 828282359}
   m_Layer: 0
   m_Name: FishManager
   m_TagString: TaskManager
@@ -1735,12 +1736,24 @@ MonoBehaviour:
   difficulty: 5
   KP: 0
   income: 5
+  penalty: 0
+  quota: 7
+  audioSource: {fileID: 0}
+  currentQuotaComplete: 0
+  KPText: {fileID: 1822187125}
+  quotaText: {fileID: 1260379633}
+  quotaMeter: {fileID: 1560865002}
   shakeaShakea: {fileID: 1971207921}
   shakeAmount: 10
   decreaseFactor: 1
   shakeDuration: 0.25
-  KPText: {fileID: 1822187125}
   numberOfKeys: 10
+  neg1: {fileID: 8300000, guid: f1f8158bf3a70664d8dfb30664d74dab, type: 3}
+  neg2: {fileID: 8300000, guid: 606abf7065ec27c43b24e79bd19fbd65, type: 3}
+  neg3: {fileID: 8300000, guid: 73e3d23aaa9d8f24ea7cf9edaa4abe71, type: 3}
+  pos1: {fileID: 8300000, guid: 9aadfd1e384b46548880f19ccdf964c8, type: 3}
+  pos2: {fileID: 8300000, guid: 608051f1595372c41b7d02248cc14e9a, type: 3}
+  pos3: {fileID: 8300000, guid: 16df30b0a0e045340bcf5cd4b9be0906, type: 3}
 --- !u!4 &828282357
 Transform:
   m_ObjectHideFlags: 0
@@ -1772,6 +1785,102 @@ MonoBehaviour:
   chatPanel: {fileID: 202145602}
   textObject: {fileID: 8856150511848089362, guid: 6e056c6b2dc42cb44b2184a3b1fa5047, type: 3}
   messageList: []
+--- !u!82 &828282359
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828282355}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1018204974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,7 +3640,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
