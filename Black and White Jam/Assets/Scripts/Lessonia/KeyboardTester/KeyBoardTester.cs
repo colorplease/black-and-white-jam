@@ -11,6 +11,8 @@ public class KeyBoardTester : MonoBehaviour
     [SerializeField]string currentInput;
     bool pressed;
     bool completed;
+
+    bool inframes = true;
     KeyCode inputCurrent;
     [SerializeField]WindowDragRedux isFocused;
     [SerializeField]float keySize;
@@ -61,7 +63,12 @@ public class KeyBoardTester : MonoBehaviour
                     }
                     else
                     {
-                        fishManager.Mistake(0.25f);
+                        if (inframes)
+                        {
+                            inframes = false;
+                            fishManager.Mistake(0.25f);
+                            StartCoroutine(iframes());
+                        }
                     }
                 }
                 if(Input.GetKeyUp(inputCurrent) && pressed)
@@ -78,5 +85,12 @@ public class KeyBoardTester : MonoBehaviour
             currentInput = keys[0].letterID;
             inputCurrent = (KeyCode)System.Enum.Parse(typeof(KeyCode), currentInput);
             keys = GetComponentsInChildren<Key>();
+    }
+
+    IEnumerator iframes()
+    {
+        yield return new WaitForSeconds(2);
+        inframes = true;
+
     }
 }

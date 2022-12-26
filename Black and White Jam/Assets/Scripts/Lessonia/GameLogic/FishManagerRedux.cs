@@ -22,6 +22,7 @@ public class FishManagerRedux : MonoBehaviour
     [Header("Random")]
     [SerializeField]Slider quotaMeter;
     [SerializeField]RectTransform shakeaShakea;
+    [SerializeField]RectTransform windows;
     Vector3 originalPos;
     bool isMistake;
     [SerializeField]float shakeAmount, decreaseFactor, shakeDuration;
@@ -37,6 +38,9 @@ public class FishManagerRedux : MonoBehaviour
     public AudioClip pos1;
     public AudioClip pos2;
     public AudioClip pos3;
+
+    [Header("Windows")]
+    public GameObject keyTester;
 
 
     void Awake()
@@ -131,8 +135,9 @@ public class FishManagerRedux : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                IncreaseDifficulty();
-                Mistake(0.25f);
+                //IncreaseDifficulty();
+                Instantiate(keyTester, new Vector3(Random.Range(-4.47f, 5.42f), Random.Range(-3.13f, 1.9f), 0), Quaternion.identity, windows);
+                //Mistake(0.25f);
             }
         }
         if (Input.GetKeyDown(KeyCode.P))
