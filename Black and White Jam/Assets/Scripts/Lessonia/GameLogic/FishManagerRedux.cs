@@ -21,7 +21,7 @@ public class FishManagerRedux : MonoBehaviour
 
     [Header("Random")]
     [SerializeField]Slider quotaMeter;
-    [SerializeField]RectTransform shakeaShakea;
+    public RectTransform shakeaShakea;
     [SerializeField]RectTransform windows;
     Vector3 originalPos;
     bool isMistake;
@@ -86,10 +86,20 @@ public class FishManagerRedux : MonoBehaviour
     {
         difficulty++;
         currentQuotaComplete = 0;
+        //game difficulty
         quota += 2;
         income += 5;
         penalty = Mathf.Floor(income * 0.3f);
-        numberOfKeys += 2 * difficulty;
+        //keyboard  tester difficulty
+        numberOfKeys += 2; 
+        //local drive difficulty
+        virusFiles += 1; 
+        normalFiles += 1; 
+        minSpeed += 0.15f; 
+        maxSpeed += 0.15f; 
+        minWait -= 0.05f; 
+        maxWait -= 0.05f;
+
     }
 
     void ScreenShake()
@@ -144,8 +154,8 @@ public class FishManagerRedux : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                //IncreaseDifficulty();
-                Instantiate(keyTester, new Vector3(Random.Range(-4.47f, 5.42f), Random.Range(-3.13f, 1.9f), 0), Quaternion.identity, windows);
+                IncreaseDifficulty();
+                //Instantiate(keyTester, new Vector3(Random.Range(-4.47f, 5.42f), Random.Range(-3.13f, 1.9f), 0), Quaternion.identity, windows);
                 //Mistake(0.25f);
             }
         }
