@@ -31,6 +31,15 @@ public class FishManagerRedux : MonoBehaviour
     [Header("Keyboard Tester")]
     public int numberOfKeys;
 
+    [Header("Local Drive")]
+    public float minSpeed;
+    public float maxSpeed;
+    public float minWait;
+    public float maxWait;
+
+    public int virusFiles;
+    public int normalFiles;
+
     [Header("OS SFX")]
     public AudioClip neg1;
     public AudioClip neg2;

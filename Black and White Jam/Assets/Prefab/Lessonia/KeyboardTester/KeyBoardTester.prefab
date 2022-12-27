@@ -543,6 +543,7 @@ MonoBehaviour:
   shakea: {fileID: 0}
   debugImage: {fileID: 0}
   isDraggable: 1
+  title: {fileID: 7849282153107306820}
 --- !u!1 &7849282152870364992
 GameObject:
   m_ObjectHideFlags: 0
